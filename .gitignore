@@ -1,0 +1,8 @@
+.settings
+.settings/
+.buildpath
+.project
+application/config/database.php
+/application/libraries/Excel.xlsx
+www/upload/*
+www/goods_img/*
