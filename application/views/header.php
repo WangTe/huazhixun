@@ -29,56 +29,21 @@
 <div id="navi">
 	<div class="box">
         <ul>
-            <li><a href="<?php echo base_url(); ?>">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            <li><a href="<?php echo base_url(); ?>">首页</a></li>
+            <li><a href="<?php echo base_url('article/type/')?>">讲师</a></li>
+            <li><a href="<?php echo base_url('article/type/')?>">课程</a></li>
+            <li><a href="<?php echo base_url('article/type/')?>">项目</a></li>
+            <li><a href="<?php echo base_url('article/type/')?>">动态</a></li>
+            <li><a href="<?php echo base_url('article/type/')?>">公益</a></li>
             <li>
             	<a href="<?php echo base_url('about/')?>">关于我们</a>
                 <div class="naviout">
-                    <a href="<?php echo base_url('about/?aid=1')?>">院长致辞</a>
-                    <a href="<?php echo base_url('about/?aid=2')?>">学院介绍</a>
-                    <a href="<?php echo base_url('about/?aid=3')?>">学校介绍</a>
-                    <a href="<?php echo base_url('about/?aid=4')?>">中心简介</a>
-                    <a href="<?php echo base_url('about/?aid=5')?>">联系我们</a>
+                    <a href="<?php echo base_url('about/?aid=1')?>">公司简介</a>
+                    <a href="<?php echo base_url('about/?aid=2')?>">荣誉资质</a>
+                    <a href="<?php echo base_url('about/?aid=3')?>">组织机构</a>
+                    <a href="<?php echo base_url('about/?aid=4')?>">联系我们</a>
                 </div>
             </li>
-            <li>
-            	<a href="<?php echo base_url('article/type/')?>">新闻中心</a>
-                <div class="naviout">
-                    <a href="<?php echo base_url('article/type/?type=2')?>">EDP新闻</a>
-                    <a href="<?php echo base_url('article/type/?type=3')?>">前沿与热点</a>
-                    <a href="<?php echo base_url('article/type/?type=8')?>">活动预告</a>
-                    <a href="<?php echo base_url('article/type/?type=9')?>">通知公告</a>
-                </div>
-            </li>
-            <li><a href="<?php echo base_url('article/type/?type=9')?>">通知公告</a></li>
-            <li>
-            	<a href="<?php echo base_url('course/type/')?>">课程申请</a>
-                <div class="naviout">
-                    <a href="<?php echo base_url('course/type/?type=1')?>">公开课程</a>
-                    <a href="<?php echo base_url('course/type/?type=2')?>">在职研究生</a>
-                    <a href="<?php echo base_url('article/type/?type=6')?>">定制课程</a>
-                </div>
-            </li>
-            <li><a href="<?php echo base_url('group/type/')?>">师资团队</a>
-            	<div class="naviout">
-                    <a href="<?php echo base_url('group/type/?type=1')?>">师资团队</a>
-                    <a href="<?php echo base_url('group/type/?type=2')?>">学员风采</a>
-                </div>
-            </li>
-            <li><a href="<?php echo base_url('article/type/?type=12')?>">校友之窗</a>
-            	<div class="naviout">
-                    <a href="<?php echo base_url('article/type/?type=12')?>">校友活动</a>
-                    <a href="<?php echo base_url('group/type/?type=3')?>">经管校友</a>
-                </div>
-            </li>
-            <li><a href="<?php echo base_url('article/type/?type=14')?>">政策法规</a>
-            	<div class="naviout">
-                    <a href="<?php echo base_url('article/type/?type=14')?>">教育法律</a>
-                    <a href="<?php echo base_url('article/type/?type=15')?>">国家政策</a>
-                    <a href="<?php echo base_url('article/type/?type=16')?>">学校规章</a>
-                </div>
-            </li>
-            <li><a href="<?php echo base_url('cert/')?>">证书查询</a></li>
-            <li><a href="<?php echo base_url('about/?aid=5')?>">联系我们</a></li>
             <div class="clear"></div>
         </ul>
     </div>

@@ -11,6 +11,7 @@ class Debug extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
+		$this->load->helper('load');
 	}
 	
 	public function index()
@@ -52,8 +53,12 @@ class Debug extends CI_Controller
 		$this->pagination->initialize($config);
 		
 		$this->output->set_output( $this->pagination->create_links());*/
-		$this->load->model('article_type_m');
-		$this->article_type_m->add_type('aaaa', 19);
+		/*$this->load->model('article_type_m');
+		$this->article_type_m->add_type('aaaa', 19); */
+		
+		$data['a'] = 'aaaaaaaa';
+		$data['b'] = 'bbbbbbbbbb';
+		load_view(array('a', 'b'), $data);
 	}
 	
 	public function test()

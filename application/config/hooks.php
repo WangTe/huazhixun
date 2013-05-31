@@ -10,6 +10,28 @@
 |
 */
 
+/*
+ * 装载控制器前的钩子定义
+ */
+$hook['pre_system'] = array(
+                                'class'    => 'MyClass',
+                                'function' => 'Myfunction',
+                                'filename' => 'Myclass.php',
+                                'filepath' => 'hooks',
+                                'params'   => array('beer', 'wine', 'snacks')
+                                );
+
+/*
+ * 装载系统前的钩子定义
+ */
+$hook['pre_controller'] = array(
+		'class'    => 'MyClass',
+		'function' => 'Myfunction',
+		'filename' => 'Myclass.php',
+		'filepath' => 'hooks',
+		'params'   => array('beer', 'wine', 'snacks')
+);
+
 
 
 /* End of file hooks.php */
