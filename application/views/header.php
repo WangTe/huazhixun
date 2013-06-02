@@ -13,7 +13,7 @@
 <script type="text/javascript" src="<?php echo base_url('static/common/js/navi.js'); ?>"></script>
 </head>
 <body>
-<div id="header" class="box">
+<!-- <div id="header" class="box">
     <div id="logo">
     </div>
     <div id="header_right">
@@ -25,26 +25,38 @@
         </div>
     </div>
     <div class="clear"></div>
-</div>
-<div id="navi">
+</div> -->
+<div id="header">
 	<div class="box">
-        <ul>
-            <li><a href="<?php echo base_url(); ?>">首页</a></li>
-            <li><a href="<?php echo base_url('article/type/')?>">讲师</a></li>
-            <li><a href="<?php echo base_url('article/type/')?>">课程</a></li>
-            <li><a href="<?php echo base_url('article/type/')?>">项目</a></li>
-            <li><a href="<?php echo base_url('article/type/')?>">动态</a></li>
-            <li><a href="<?php echo base_url('article/type/')?>">公益</a></li>
-            <li>
-            	<a href="<?php echo base_url('about/')?>">关于我们</a>
-                <div class="naviout">
-                    <a href="<?php echo base_url('about/?aid=1')?>">公司简介</a>
-                    <a href="<?php echo base_url('about/?aid=2')?>">荣誉资质</a>
-                    <a href="<?php echo base_url('about/?aid=3')?>">组织机构</a>
-                    <a href="<?php echo base_url('about/?aid=4')?>">联系我们</a>
-                </div>
-            </li>
-            <div class="clear"></div>
-        </ul>
+		<div id="logo">
+			<a href="#"><img src="static/common/img/logo.png" /></a>
+		</div>
+		<div id="navi">
+	        <ul>
+	            <li><a href="<?php echo base_url(); ?>">首页</a></li>
+	            <li><a href="<?php echo base_url('article/type/')?>">讲师</a></li>
+	            <li><a href="<?php echo base_url('article/type/')?>">课程</a></li>
+	            <li><a href="<?php echo base_url('article/type/')?>">项目</a></li>
+	            <li><a href="<?php echo base_url('article/type/')?>">动态</a></li>
+	            <li><a href="<?php echo base_url('article/type/')?>">公益</a></li>
+	            <li>
+	            	<a href="<?php echo base_url('about/')?>">关于</a>
+	                <div class="naviout">
+	                    <a href="<?php echo base_url('about/?aid=1')?>">公司简介</a>
+	                    <a href="<?php echo base_url('about/?aid=2')?>">荣誉资质</a>
+	                    <a href="<?php echo base_url('about/?aid=3')?>">组织机构</a>
+	                    <a href="<?php echo base_url('about/?aid=4')?>">联系我们</a>
+	                </div>
+	            </li>
+	            <div class="clear"></div>
+	        </ul>
+	    </div>
+	    <div id="header_right">
+        	<form action="<?php echo base_url('article/search/'); ?>" method="get">
+            	<input class="searchword" name="keyword" type="text" maxlength="22" size="22" onfocus="if (this.value=='搜索...') this.value='';" onBlur="if (this.value=='') this.value='搜索...';" value="搜索..." />
+            	<button class="search_submit" type="submit">搜索</button>
+            </form>
+        </div>
+	    <div class="clear"></div>
     </div>
 </div>
