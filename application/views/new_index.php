@@ -162,10 +162,10 @@
       <div class="column2">
         <h2><a href="#">华智讯项目介绍</a></h2>
         <img class="imgl" src="static/common/img/8.jpg" alt="" />
-        <p>This is a W3C standards compliant free website template from <a href="http://www.cssmoban.com/">模板之家</a>.</p>
-        <p>This template is distributed using a <a href="#">Website Template Licence</a>, which allows you to use and modify the template for both personal and commercial use when you keep the provided credit links in the footer. For more CSS templates visit <a href="#">Free Website Templates</a>.</p>
-        <p>Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anterdumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.</p>
-        <p>Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.</p>
+        <p>企业培训不是基于知道而培训，而是基于做到而培训，所以一个实效的培训不应只是理念的导入，而更应该注重实操工具的传授。</p>
+        <p>杨帆老师在培训中除了传授知识之外，更注重改变学员的思维方式，因为如何想决定如何做，思维方式不改变，行为是不会改变的，只有学员的思维方式发生了变化，才能真正达成培训的目的：学以致变、学以致用。</p>
+        <p>杨帆老师现具有多年企业管理、培训、及咨询经历，课程内容实战性极强，善于现场解决学员工作中的具体问题，其课程案例众多并以其诙谐、幽默的风格深受学员推崇。</p>
+        <p>授课风格：演说家风采，脱口秀幽默，情景式案例。对问题一针见血，只言片语，改变很多人；用逆向思维导入培训模式，具有实战性，课程与众不同之处在于实战，拒绝空洞的理论和教条。</p>
       </div>
     </div>
     <div class="fl_right">
