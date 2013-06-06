@@ -29,34 +29,50 @@
 			<div class="index_content">
 				<ul class="index_content_teacher">
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84"  /></a>
 						<div class="f_l">
 							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授；中国竞争力研究中心特聘专家；
+							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
 						</div>
 						<div class="clear"></div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84"  /></a>
 						<div class="f_l">
 							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授；中国竞争力研究中心特聘专家；
+							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
 						</div>
 						<div class="clear"></div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84"  /></a>
 						<div class="f_l">
 							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授；中国竞争力研究中心特聘专家；
+							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
 						</div>
 						<div class="clear"></div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84" /></a>
 						<div class="f_l">
 							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授；中国竞争力研究中心特聘专家；
+							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84" /></a>
+						<div class="f_l">
+							<span>杨帆：</span>
+							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84" /></a>
+						<div class="f_l">
+							<span>杨帆：</span>
+							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
 						</div>
 						<div class="clear"></div>
 					</li>
@@ -75,16 +91,24 @@
 			<div class="index_content">
 				<ul class="index_content_course">
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="205" />
-						<p>管理者素质能力提升与卓越团队建设 主讲人：杨帆</p>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="205" />
-						<p>管理者素质能力提升与卓越团队建设 主讲人：杨帆</p>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="205" />
-						<p>管理者素质能力提升与卓越团队建设 主讲人：杨帆</p>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+					</li>
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+					</li>
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
 					</li>
 					<div class="clear"></div>
 				</ul>
@@ -98,31 +122,58 @@
 					<div class="clear"></div>
 				</div>
 			</div>
+			<div class="index_content">
+				<ul class="index_content_course">
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设 <br />主讲人：杨帆</p>
+					</li>
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+					</li>
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+					</li>
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+					</li>
+					<li>
+						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
+						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="index_right">
-		<div id="tiny_ad">
-		</div>
+		<!-- <div id="tiny_ad">
+		</div> -->
 		<div class="announcement">
 			<div class="title_1">
-				<p>公告栏</p>
+				<img src="static/common/img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif" />
+				<a href="#"><p>动态</p></a>
+				<div class="clear"></div>
 			</div>
 			<div class="index_content_announcement">
 				<ul>
 					<li>
-						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
+						<a href="#"><p>海归博士疑因成果归属问题自毁实验室研究标本</p></a>
 					</li>
 					<li>
-						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
+						<a href="#"><p>浙江教育行政部门和高校将实现官方微博“全覆盖”15</p></a>
 					</li>
 					<li>
-						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
+						<a href="#"><p>郑州：退役士兵可享免费职业教育</p></a>
 					</li>
 					<li>
-						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
+						<a href="#"><p>出国留学是赔还是赚 留学4年花费119万</p></a>
 					</li>
 					<li>
-						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
+						<a href="#"><p>求职季听求职故事 不签合同永远拿试用期工资</p></a>
 					</li>
 					<li>
 						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>

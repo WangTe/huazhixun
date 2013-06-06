@@ -175,7 +175,7 @@ ul li {
 	background-image:url(../img/100120081119110645A3A81FAE3D1E87A91472339BFAF9DABA.gif);
 	background-repeat-x:repeat;
 	height:28px;
-	margin-top: 20px;
+	margin-top: 8px;
 	border-top:#c6c6c6 solid 1px;
 	border-right:#c6c6c6 solid 1px;
 	border-bottom:#c6c6c6 solid 1px;
@@ -199,13 +199,11 @@ ul li {
 }
 .index_content li {
 	float:left;
-	margin-left:10px;
 	margin-top:10px;
-	border:#bebebe solid 1px;
 }
 .index_content .index_content_teacher li {
 	height:120px;
-	width:340px;	
+	width:240px;	
 }
 .index_content_teacher {
 	width:720px;
@@ -214,18 +212,16 @@ ul li {
 	width:720px;
 }
 .index_content .index_content_course li {
-	width:223px;	
+	width:144px;	
 }
 .index_content_course li p {
-	margin-left:5px;
+    padding-right:10px;
 	padding-top:4px;
 	padding-bottom:4px;
 	line-height:18px;
-	font-size:13px;
+	font-size:12px;
 }
 .index_content img {
-	margin-top:4px;
-	margin-left:5px;
 	border:#d0d0d0 solid 1px;
 	padding:2px;
 	float:left;
@@ -235,8 +231,8 @@ ul li {
 }
 .index_content .f_l {
 	margin-top:4px;
-	margin-left:5px;
-	width:240px;
+	margin-left:8px;
+	width:131px;
 	line-height:20px;
 	overflow:hidden;
 }
@@ -260,11 +256,11 @@ ul li {
 	border:#c6c6c6 solid 1px;
 	margin-top:20px;
 }
-.index_right .title_1 {
+/*.index_right .title_1 {
 	background-image:url(../img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif);
 	background-repeat:repeat-x;
 	border-left:#c6c6c6 solid 1px;
-}
+}*/
 .announcement .title_1 p {
 	float:none;
 	margin-left:5px;
@@ -281,10 +277,11 @@ ul li {
 	padding-bottom:5px;
 }
 .index_content_announcement p {
-	line-height:24px;
+	line-height:26px;
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
+	padding-right:5px;
 }
 .index_content_announcement a:hover {
 	color:rgb(200,186,0);
