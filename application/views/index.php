@@ -1,148 +1,104 @@
-<div>
-	<div id="mainpic_index" class="box">
-	    <div id="ad_change">
-	        <div id="ad_img"> 
-	        	<?php foreach ($ad_img as $row): ?><a href="<?php echo $row['url']; ?>"><img src="static/common/img/13541035064144.jpg" width="960" height="190" /></a><?php endforeach; ?>
-	        </div>
-	        <div class="img_num">
-	            <div style="float:right">
-	                <p class="img_numcheck">1</p>
-	                <?php for($i = 2; $i <= $ad_img_num; ++$i):?>
-	                <p><?php echo $i;?></p>
-	                
-	                <?php endfor; ?>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-</div>
 <div class="box">
 	<div class="index_left">
-		<div>
+		<div class="index_left_item">
 			<div class="title_1">
-				<div>
-					<img src="static/common/img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif" />
-					<a href="#"><p>讲师</p></a>
-					<div class="clear"></div>
-				</div>
+				<a href="#"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_teacher">
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84"  /></a>
-						<div class="f_l">
-							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120" /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-						<div class="clear"></div>
+					</li><li>
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120" /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
+						</div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84"  /></a>
-						<div class="f_l">
-							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-						<div class="clear"></div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84"  /></a>
-						<div class="f_l">
-							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-						<div class="clear"></div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84" /></a>
-						<div class="f_l">
-							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-						<div class="clear"></div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84" /></a>
-						<div class="f_l">
-							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
-						</div>
-						<div class="clear"></div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" height="106" width="84" /></a>
-						<div class="f_l">
-							<span>杨帆：</span>
-							中国高企委职业教育专业委员会  特聘专家；北京大学经济学院 客座教授；北京大学政府管理学院  客座教授。
-						</div>
-						<div class="clear"></div>
 					</li>
 					<div class="clear"></div>
 				</ul>
 			</div>
 		</div>
-		<div>
+		<div class="index_left_item">
 			<div class="title_1">
-				<div>
-					<img src="static/common/img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif" />
-					<a href="#"><p>课程</p></a>
-					<div class="clear"></div>
-				</div>
+				<a href="#"><p>主打课程<span>&nbspLeading Courses</span></p></a>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_course">
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
-					</li>
-					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<div class="clear"></div>
 				</ul>
 			</div>
 		</div>
-		<div>
+		<div class="index_left_item">
 			<div class="title_1">
-				<div>
-					<img src="static/common/img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif" />
-					<a href="#"><p>项目</p></a>
-					<div class="clear"></div>
-				</div>
+				<a href="#"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
 			</div>
 			<div class="index_content">
-				<ul class="index_content_course">
+				<ul class="index_content_project">
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设 <br />主讲人：杨帆</p>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+						<div class="clear"></div>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+						<div class="clear"></div>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+						<div class="clear"></div>
 					</li>
 					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
-					</li>
-					<li>
-						<img src="static/common/img/video_img4.jpg" width="124" height="110" />
-						<p>管理者素质能力提升与卓越团队建设<br />主讲人：杨帆</p>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。  </p></div>
+						<div class="clear"></div>
 					</li>
 					<div class="clear"></div>
 				</ul>
@@ -150,13 +106,12 @@
 		</div>
 	</div>
 	<div class="index_right">
-		<!-- <div id="tiny_ad">
-		</div> -->
-		<div class="announcement">
+		<div id="tiny_ad">
+			<img src="static/common/img/xiaotu2.jpg" width="228" />
+		</div>
+		<div class="index_left_item announcement">
 			<div class="title_1">
-				<img src="static/common/img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif" />
-				<a href="#"><p>动态</p></a>
-				<div class="clear"></div>
+				<a href="#"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
 			</div>
 			<div class="index_content_announcement">
 				<ul>
@@ -181,6 +136,20 @@
 				</ul>
 			</div>
 		</div>
+		<div id="link">
+			<div class="title_1">
+				<a href="#"><p>合作机构<span>&nbspCooperators</span></p></a>
+			</div>
+		    <!-- <div class="f_l link_l"><b>友情链接：</b></div> -->
+		    <div>
+		        <ul>
+		        	<?php foreach ($links as $row): ?>
+		            <li><a href="<?php echo $row['url']; ?>" target="_blank" title="<?php echo $row['title']; ?>"><?php echo $row['name']; ?></a></li>
+		            <?php endforeach; ?>
+		    		<div class="clear"></div>
+		        </ul>
+		    </div>
+		</div>
 		<div id="share_message">
 			<p>分享到：</p>
 			<a rel="nofollow" href="javascript:void((function(s,d,e){try{}catch(e){}var%20f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=1392530042'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><img src="static/common/img/sinaicon.gif" alt="分享到新浪微博" title="分享到新浪微博" border='0'></a>
@@ -190,15 +159,4 @@
 		</div>
 	</div>
 	<div class="clear"></div>
-</div>
-<div id="link" class="box">
-    <div class="f_l link_l"><b>友情链接：</b></div>
-    <div>
-        <ul>
-        	<?php foreach ($links as $row): ?>
-            <li><a href="<?php echo $row['url']; ?>" target="_blank" title="<?php echo $row['title']; ?>"><?php echo $row['name']; ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-    <div class="clear"></div>
 </div>

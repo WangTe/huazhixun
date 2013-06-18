@@ -7,9 +7,9 @@
 body {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
-	background-color:rgb(244, 244, 244);
 	background-position:0 -160px;
 	color:#555;
+	background-color:rgb(247, 245, 245);
 }
 img {
 	border:none;
@@ -76,11 +76,7 @@ ul li {
     background-image:url(../img/topBg.png);
     background-repeat:repeat-x;
 	height:45px;
-	position:fixed;
 	width:100%;
-	top:0px;
-	left:0px;
-	z-index:1999;
 }
 #logo {
 	float:left;
@@ -90,7 +86,7 @@ ul li {
 	margin-top:5px;
 }
 #header_right {
-	float:right;
+	float:left;
 	margin-right:10px;
 	margin-top:7px;
 	font-family:"微软雅黑";
@@ -164,6 +160,12 @@ ul li {
 #content_left p {
 	width:180px;
 }
+.index_left_item {
+	border:1px #cecece solid;
+	margin-top:8px;
+	padding-bottom:8px;
+	background-color:#fff;
+}
 #content_right {
 	margin-top:5px;
 	margin-left:12px;
@@ -172,24 +174,25 @@ ul li {
 	line-height: 22px;
 }
 .title_1 {
-	background-image:url(../img/100120081119110645A3A81FAE3D1E87A91472339BFAF9DABA.gif);
-	background-repeat-x:repeat;
-	height:28px;
-	margin-top: 8px;
-	border-top:#c6c6c6 solid 1px;
-	border-right:#c6c6c6 solid 1px;
-	border-bottom:#c6c6c6 solid 1px;
+	background-color:rgb(250, 250, 250);
+	height:38px;
+	border-bottom:1px #ddd solid;
 }
 .title_1 p {
 	cursor:pointer;	
-	line-height:28px;
 	font-family:arial, helvetica, verdana, tahoma, sans-serif;
 	font-weight:bold;
-	font-size:14px;
-	color:#000;
-	float:left;
-	padding-left:5px;
+	font-size:18px;
+	color:#333;
+	padding-left:10px;
+	padding-top:8px;
+	width:190px;
 }
+.title_1 p span {
+	font-size:12px;
+	font-weight:normal;
+	color:#ccc;
+} 
 .title_1 img {
 	float:left;
 }
@@ -197,34 +200,83 @@ ul li {
 	width:720px;
 	float:left;
 }
+.index_content {
+	width:718px;
+}
 .index_content li {
 	float:left;
 	margin-top:10px;
 }
 .index_content .index_content_teacher li {
-	height:120px;
-	width:240px;	
+	padding-left:17px;
+	padding-right:17px;
 }
 .index_content_teacher {
-	width:720px;
+}
+.index_content_teacher .t_center {
+	color:#000;
+	margin-top:5px;
+}
+.teacher_remark {
+	color:#909090;
+	margin-top:3px;
 }
 .index_content_course {
-	width:720px;
 }
 .index_content .index_content_course li {
-	width:144px;	
+	width:140px;	
+	padding-left:19px;
+	padding-right:19px;
 }
-.index_content_course li p {
-    padding-right:10px;
+.index_content .index_content_project li {
+	width:330px;	
+	padding-left:19px;
+	padding-right:5px;
+}
+.index_content_course li .t_center {
 	padding-top:4px;
-	padding-bottom:4px;
-	line-height:18px;
+	color:#000;
 	font-size:12px;
+	white-space:nowrap;
+	overflow:hidden;
+	word-break:break-all;
+	width:132px;
+}
+.index_content_course li p{
+	margin-left:3px;
+}
+.course_remark {
+	color:#909090;
+	line-height:20px;
+}
+.course_remark a {
+	color:#909090;
+}
+.course_remark span {
+	background-image:url(../img/teacher_sign2.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	height:14px;
+	width:15px;
+	vertical-align:middle;
 }
 .index_content img {
 	border:#d0d0d0 solid 1px;
 	padding:2px;
+}
+.index_content_project li img {
 	float:left;
+}
+.index_content_project li p {
+}
+.index_content .index_content_project .f_l {
+	width:160px;
+}
+.index_content .index_content_project .f_l p {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	word-break:break-all;
+	height:100px;
 }
 .index_content .index_content_course img {
 	float:none !important;
@@ -232,7 +284,6 @@ ul li {
 .index_content .f_l {
 	margin-top:4px;
 	margin-left:8px;
-	width:131px;
 	line-height:20px;
 	overflow:hidden;
 }
@@ -251,25 +302,17 @@ ul li {
 	margin-left:5px;
 }
 #tiny_ad {
-	width:230px;
-	height:180px;
 	border:#c6c6c6 solid 1px;
-	margin-top:20px;
+	margin-top:8px;
 }
 /*.index_right .title_1 {
 	background-image:url(../img/1001200901131912080FE41CFAC3EB3342B8E31DFBE58671E.gif);
 	background-repeat:repeat-x;
 	border-left:#c6c6c6 solid 1px;
 }*/
-.announcement .title_1 p {
-	float:none;
-	margin-left:5px;
-	width:50px;
+.announcement {
 }
 .index_content_announcement {
-	border-left:#c6c6c6 solid 1px;
-	border-right:#c6c6c6 solid 1px;
-	border-bottom:#c6c6c6 solid 1px;
 }
 .index_content_announcement ul {
 	padding-top:5px;
@@ -280,8 +323,17 @@ ul li {
 	line-height:26px;
 	overflow:hidden;
 	white-space:nowrap;
-	text-overflow:ellipsis;
 	padding-right:5px;
+	margin-right:0px;
+	width:200px;
+	cursor:pointer;
+}
+.index_content_announcement p:hover {
+	text-overflow:inherit;
+	overflow:visible;
+}
+.index_content_announcement li {
+	height:26px;
 }
 .index_content_announcement a:hover {
 	color:rgb(200,186,0);
@@ -634,7 +686,6 @@ ul li {
 
 /*index*/
 #mainpic_index {
-	margin-top:48px;
 }
 #content1 {
 	background-image:url(../img/content_1.png);
@@ -892,15 +943,16 @@ ul li {
 }
 #link {
 	background-color:#FFF;
-	line-height:40px;
-	border:1px solid #DDD;
+	line-height:26px;
+	border:1px solid #cecece;
 	margin-top:10px;
-	text-indent:2em;
+	display:inline-block;
 }
 #link li {
 	list-style:none;
 	float:left;
-	margin:0 10px;
+	padding-left:10px;
+	white-space:nowrap;
 }
 .img_link img {
 	margin:3px 0;

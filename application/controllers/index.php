@@ -24,7 +24,7 @@ class Index extends CI_Controller
 		$data['ad_img_num'] = count($data['ad_img']);
 		$data['links'] = $this->link_m->get_list();
 		
-		$this->load->view('header.php');
+		$this->load->view('header.php', $data);
 		$this->load->view('index.php', $data);
 		$this->load->view('footer.php');
 		//$this->load->view('new_index.php');

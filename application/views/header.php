@@ -26,11 +26,35 @@
     </div>
     <div class="clear"></div>
 </div> -->
+<div>
+	<div id="mainpic_index" class="box">
+	    <div id="ad_change">
+	        <div id="ad_img"> 
+	        	<?php foreach ($ad_img as $row): ?><a href="<?php echo $row['url']; ?>"><img src="static/common/img/13541035064144.jpg" width="960" height="120" /></a><?php endforeach; ?>
+	        </div>
+	        <div class="img_num">
+	            <div style="float:right">
+	                <p class="img_numcheck">1</p>
+	                <?php for($i = 2; $i <= $ad_img_num; ++$i):?>
+	                <p><?php echo $i;?></p>
+	                
+	                <?php endfor; ?>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
 <div id="header">
 	<div class="box">
 		<div id="logo">
 			<a href="#"><img src="static/common/img/logo.png" /></a>
 		</div>
+	    <div id="header_right">
+        	<form action="<?php echo base_url(''); ?>" method="get">
+            	<input class="searchword" name="keyword" type="text" maxlength="22" size="22" onfocus="if (this.value=='搜索...') this.value='';" onBlur="if (this.value=='') this.value='搜索...';" value="搜索..." />
+            	<button class="search_submit" type="submit">搜索</button>
+            </form>
+        </div>
 		<div id="navi">
 	        <ul>
 	            <li><a href="<?php echo base_url(); ?>">首页</a></li>
@@ -51,12 +75,6 @@
 	            <div class="clear"></div>
 	        </ul>
 	    </div>
-	    <div id="header_right">
-        	<form action="<?php echo base_url(''); ?>" method="get">
-            	<input class="searchword" name="keyword" type="text" maxlength="22" size="22" onfocus="if (this.value=='搜索...') this.value='';" onBlur="if (this.value=='') this.value='搜索...';" value="搜索..." />
-            	<button class="search_submit" type="submit">搜索</button>
-            </form>
-        </div>
 	    <div class="clear"></div>
     </div>
 </div>

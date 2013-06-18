@@ -12,13 +12,13 @@
     margin:0 auto;
     width:960px;
 	overflow:hidden;
-	height:190px;
+	height:120px;
 }
 #ad_img {
 	white-space:nowrap;
 }
 #ad_change .img_num {
-    top:165px;
+    top:95px;
     left:0px;
     position:absolute;
     z-index:1000;
