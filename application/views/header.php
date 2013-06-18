@@ -26,7 +26,7 @@
     </div>
     <div class="clear"></div>
 </div> -->
-<div>
+<!-- <div>
 	<div id="mainpic_index" class="box">
 	    <div id="ad_change">
 	        <div id="ad_img"> 
@@ -40,6 +40,15 @@
 	                
 	                <?php endfor; ?>
 	            </div>
+	        </div>
+	    </div>
+	</div>
+</div> -->
+<div>
+	<div id="mainpic_index" class="box">
+	    <div id="ad_change">
+	        <div id="ad_img"> 
+	        	<a href="#"><img src="static/common/img/13541035064144.jpg" width="960" height="120" /></a>
 	        </div>
 	    </div>
 	</div>
