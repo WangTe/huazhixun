@@ -9,8 +9,8 @@ body {
 	font-size:12px;
 	background-position:0 -160px;
 	color:#555;
-	/*background-color:rgb(26, 29, 24);*/
-	background-color:rgb(180, 250, 180);
+	/*background-color:rgb(26, 29, 24);
+	background-color:rgb(180, 250, 180);*/
 }
 img {
 	border:none;
@@ -162,7 +162,7 @@ ul li {
 	width:180px;
 }
 .index_left_item {
-	border:1px #cecece solid;
+	border:1px #DDD solid;
 	margin-top:8px;
 	padding-bottom:8px;
 	background-color:#fff;
@@ -687,14 +687,16 @@ ul li {
 
 /*index*/
 .mainpic_bg {
-	background-image:url(../img/header-tail.gif);
+/*	background-image:url(../img/header-tail.gif);
 	background-repeat:repeat-x;
-	background-position:0 -50px;
+	background-position:0 -50px;*/
 	width:100%
 }
 #mainpic_index {
-	height:240px;
-	background-image:url(../img/header-bg.jpg);
+	height:120px;
+	width:960px;
+	margin:0 auto;
+	background-image:url(../img/banner.png);
     background-repeat:no-repeat;
 	background-position:50% -50px;
 }
@@ -955,7 +957,7 @@ ul li {
 #link {
 	background-color:#FFF;
 	line-height:26px;
-	border:1px solid #cecece;
+	border:1px solid #DDD;
 	margin-top:10px;
 	display:inline-block;
 }
