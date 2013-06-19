@@ -9,7 +9,8 @@ body {
 	font-size:12px;
 	background-position:0 -160px;
 	color:#555;
-	background-color:rgb(247, 245, 245);
+	/*background-color:rgb(26, 29, 24);*/
+	background-color:rgb(180, 250, 180);
 }
 img {
 	border:none;
@@ -685,7 +686,17 @@ ul li {
 /*list*/
 
 /*index*/
+.mainpic_bg {
+	background-image:url(../img/header-tail.gif);
+	background-repeat:repeat-x;
+	background-position:0 -50px;
+	width:100%
+}
 #mainpic_index {
+	height:240px;
+	background-image:url(../img/header-bg.jpg);
+    background-repeat:no-repeat;
+	background-position:50% -50px;
 }
 #content1 {
 	background-image:url(../img/content_1.png);
