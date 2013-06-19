@@ -60,6 +60,12 @@
 		</div>
 	    <div id="header_right">
         	<form action="<?php echo base_url(''); ?>" method="get">
+        		<select name="items" class="select_item">
+	        		<option value="全部" selected="selected">全部</option>
+					<option value="讲师">讲师</option>
+					<option value="课程">课程</option>
+					<option value="项目">项目</option>
+				</select>
             	<input class="searchword" name="keyword" type="text" maxlength="22" size="22" onfocus="if (this.value=='搜索...') this.value='';" onBlur="if (this.value=='') this.value='搜索...';" value="搜索..." />
             	<button class="search_submit" type="submit">搜索</button>
             </form>
