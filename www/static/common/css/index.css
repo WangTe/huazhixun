@@ -194,6 +194,12 @@ ul li {
 	padding-top:8px;
 	width:190px;
 }
+.title_1 a {
+	display:block;
+}
+.title_1 .f_r p {
+	width:70px;
+} 
 .title_1 p span {
 	font-size:12px;
 	font-weight:normal;
@@ -214,8 +220,8 @@ ul li {
 	margin-top:10px;
 }
 .index_content .index_content_teacher li {
-	padding-left:17px;
-	padding-right:17px;
+	padding-left:14px;
+	padding-right:14px;
 }
 .index_content_teacher {
 }
@@ -231,11 +237,11 @@ ul li {
 }
 .index_content .index_content_course li {
 	width:140px;	
-	padding-left:19px;
-	padding-right:19px;
+	padding-left:25px;
+	padding-right:25px;
 }
 .index_content .index_content_project li {
-	width:330px;	
+	width:150px;	
 	padding-left:19px;
 	padding-right:5px;
 }
@@ -271,18 +277,14 @@ ul li {
 	padding:2px;
 }
 .index_content_project li img {
-	float:left;
 }
 .index_content_project li p {
 }
-.index_content .index_content_project .f_l {
-	width:160px;
-}
-.index_content .index_content_project .f_l p {
+.index_content .index_content_project li p {
 	overflow:hidden;
 	text-overflow:ellipsis;
 	word-break:break-all;
-	height:100px;
+	line-height:20px;
 }
 .index_content .index_content_course img {
 	float:none !important;
@@ -303,7 +305,7 @@ ul li {
 	white-space:nowrap;
 }
 .index_right {
-	width:230px;
+	width:235px;
 	float:left;
 	margin-left:5px;
 }
@@ -965,6 +967,7 @@ ul li {
 	border:1px solid #DDD;
 	margin-top:10px;
 	display:inline-block;
+	width:233px;
 }
 #link li {
 	list-style:none;

@@ -1,10 +1,11 @@
 <div class="box">
-	<div class="index_left">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a href="#"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
+				<a class="f_l" href="#"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
+				<a class="f_r" href="#"><p>更多>></p></a>
+				<div class="clear"></div>
 			</div>
-			<div class="index_content">
+			<div class="index_content" style="width:960px">
 				<ul class="index_content_teacher">
 					<li>
 						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120" /></a>
@@ -40,65 +41,113 @@
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li>
+					<li>
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<div>
+							<a href="#"><p class="t_center">杨帆</p></a>
+							<p class="teacher_remark">中国高企委特聘专家</p>
+						</div>
+					</li>
 					<div class="clear"></div>
 				</ul>
 			</div>
 		</div>
 		<div class="index_left_item">
 			<div class="title_1">
-				<a href="#"><p>主打课程<span>&nbspLeading Courses</span></p></a>
+				<a class="f_l" href="#"><p>主打课程<span>&nbspLeading Courses</span></p></a>
+				<a class="f_r" href="#"><p>更多>></p></a>
+				<div class="clear"></div>
 			</div>
-			<div class="index_content">
+			<div class="index_content" style="width:960px">
 				<ul class="index_content_course">
 					<li>
-						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
-						<a href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
-						<a href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
-						<a href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
+					</li>
+					<li>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<div class="clear"></div>
 				</ul>
 			</div>
 		</div>
+	<div class="index_left">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a href="#"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
+				<a class="f_l" href="#"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
+				<a class="f_r" href="#"><p>更多>></p></a>
+				<div class="clear"></div>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
 					<li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
-						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-						<div class="clear"></div>
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
-						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-						<div class="clear"></div>
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
-						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-						<div class="clear"></div>
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
-						<div class="f_l"><p>WWDC是苹果公司一年一度的全球开发人员大会。  </p></div>
-						<div class="clear"></div>
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="index_left_item">
+			<div class="title_1">
+				<a class="f_l" href="#"><p>公益<span>&nbspCommonweal</span></p></a>
+				<a class="f_r" href="#"><p>更多>></p></a>
+				<div class="clear"></div>
+			</div>
+			<div class="index_content">
+				<ul class="index_content_project">
+					<li>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+					</li>
+					<li>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+					</li>
+					<li>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
+					</li>
+					<li>
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<div class="clear"></div>
 				</ul>
@@ -106,9 +155,9 @@
 		</div>
 	</div>
 	<div class="index_right">
-		<div id="tiny_ad">
+		<!-- <div id="tiny_ad">
 			<img src="static/common/img/xiaotu2.jpg" width="228" />
-		</div>
+		</div> -->
 		<div class="index_left_item announcement">
 			<div class="title_1">
 				<a href="#"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
@@ -143,9 +192,10 @@
 		    <!-- <div class="f_l link_l"><b>友情链接：</b></div> -->
 		    <div>
 		        <ul>
-		        	<?php foreach ($links as $row): ?>
-		            <li><a href="<?php echo $row['url']; ?>" target="_blank" title="<?php echo $row['title']; ?>"><?php echo $row['name']; ?></a></li>
-		            <?php endforeach; ?>
+		            <li><a href="www.baidu.com" target="_blank" title="百度">百度</a></li>
+		            <li><a href="www.qq.com" target="_blank" title="腾讯">腾讯</a></li>
+		            <li><a href="www.jd.com" target="_blank" title="京东商城">京东商城</a></li>
+		            <li><a href="www.taobao.com" target="_blank" title="淘宝网">淘宝网</a></li>
 		    		<div class="clear"></div>
 		        </ul>
 		    </div>
