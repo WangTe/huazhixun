@@ -41,9 +41,9 @@ a:hover {
 	margin:0 auto;
 }
 .more {
-	font-size:12px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:normal;
+	font-size:12px!important;
+	font-weight:normal !important;
+	margin-top: 7px;
 	color:#16487d;
 }
 ul li {
@@ -198,7 +198,7 @@ ul li {
 	display:block;
 }
 .title_1 .f_r p {
-	width:70px;
+	width:52px;
 } 
 .title_1 p span {
 	font-size:12px;
@@ -221,7 +221,7 @@ ul li {
 }
 .index_content .index_content_teacher li {
 	padding-left:14px;
-	padding-right:14px;
+	padding-right:15px;
 }
 .index_content_teacher {
 }
@@ -700,12 +700,11 @@ ul li {
 	width:100%
 }
 #mainpic_index {
-	height:120px;
+	height:180px;
 	width:960px;
 	margin:0 auto;
 	background-image:url(../img/banner.png);
     background-repeat:no-repeat;
-	background-position:50% -50px;
 }
 #content1 {
 	background-image:url(../img/content_1.png);

@@ -44,15 +44,6 @@
 	    </div>
 	</div>
 </div> -->
-<div class="mainpic_bg">
-	<div id="mainpic_index">
-	    <!-- <div id="ad_change">
-	        <div id="ad_img"> 
-	        	<a href="#"><img src="static/common/img/13541035064144.jpg" width="960" height="120" /></a>
-	        </div>
-	    </div> -->
-	</div>
-</div>
 <div id="header">
 	<div class="box">
 		<div id="logo">
@@ -92,4 +83,14 @@
 	    </div>
 	    <div class="clear"></div>
     </div>
+</div>
+
+<div class="mainpic_bg">
+	<div id="mainpic_index">
+	    <!-- <div id="ad_change">
+	        <div id="ad_img"> 
+	        	<a href="#"><img src="static/common/img/13541035064144.jpg" width="960" height="120" /></a>
+	        </div>
+	    </div> -->
+	</div>
 </div>
