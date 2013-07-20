@@ -2,54 +2,54 @@
 		<div class="index_left_item">
 			<div class="title_1">
 				<a class="f_l" href="#"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
-				<a class="f_r" href="#"><p>更多>></p></a>
+				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content" style="width:960px">
 				<ul class="index_content_teacher">
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120" /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li><li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120" /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
 					</li>
 					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="100" height="120"  /></a>
+						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
@@ -62,33 +62,33 @@
 		<div class="index_left_item">
 			<div class="title_1">
 				<a class="f_l" href="#"><p>主打课程<span>&nbspLeading Courses</span></p></a>
-				<a class="f_r" href="#"><p>更多>></p></a>
+				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content" style="width:960px">
 				<ul class="index_content_course">
 					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
 					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="134" height="110" /></a>
+						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
 					</li>
@@ -100,25 +100,25 @@
 		<div class="index_left_item">
 			<div class="title_1">
 				<a class="f_l" href="#"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
-				<a class="f_r" href="#"><p>更多>></p></a>
+				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<div class="clear"></div>
@@ -128,25 +128,25 @@
 		<div class="index_left_item">
 			<div class="title_1">
 				<a class="f_l" href="#"><p>公益<span>&nbspCommonweal</span></p></a>
-				<a class="f_r" href="#"><p>更多>></p></a>
+				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="110" />
+						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
 					<div class="clear"></div>
