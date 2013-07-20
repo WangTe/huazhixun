@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * 项目管理模型层
+ * 公益管理模型层
  * 
  * @author 风格独特
  */
 
-class Project_m extends CI_Model 
+class Activity_m extends CI_Model 
 {
 	public function __construct() 
 	{
@@ -17,7 +17,7 @@ class Project_m extends CI_Model
 	{
 		$id = (int) $id;
 		$this->db->where('id', $id);
-		$query = $this->db->get('project');
+		$query = $this->db->get('activity');
 		if($query->num_rows() > 0) {
 			return $query->row_array();
 		}
@@ -32,7 +32,7 @@ class Project_m extends CI_Model
 		}
 		
 		$this->db->order_by('index DESC, id DESC');
-		$query = $this->db->get('project', $limit, $offset);
+		$query = $this->db->get('activity', $limit, $offset);
 		$return = $query->result_array();
 		return $return;
 	}
@@ -43,7 +43,7 @@ class Project_m extends CI_Model
 		
 		$this->db->where('index >', 0);
 		$this->db->order_by('index DESC, id DESC');
-		$query = $this->db->get('project', $limit);
+		$query = $this->db->get('activity', $limit);
 		$return = $query->result_array();
 		return $return;
 	}
@@ -53,12 +53,12 @@ class Project_m extends CI_Model
 		if($type != '') {
 			$this->db->where('type', $type);
 		}
-		return $this->db->count_all_results('project');
+		return $this->db->count_all_results('activity');
 	}
 	
 	public function add($data)
 	{
-		if($this->db->insert('project', $data) === FALSE) {
+		if($this->db->insert('activity', $data) === FALSE) {
 			return FALSE;
 		}
 		return TRUE;
@@ -68,13 +68,13 @@ class Project_m extends CI_Model
 	{
 		$id = (int) $id;
 		$this->db->where('id', $id);
-		$this->db->update('project', $data);
+		$this->db->update('activity', $data);
 	}
 	
 	public function del($id)
 	{
 		$this->db->where('id', $id);
-		if($this->db->delete('project') === FALSE) {
+		if($this->db->delete('activity') === FALSE) {
 			return FALSE;
 		}
 		return TRUE;

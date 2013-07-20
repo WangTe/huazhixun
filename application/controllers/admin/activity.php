@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * 项目管理的控制器
+ * 公益管理的控制器
  * 
  * @author 风格独特
  */
 
-class Project extends CI_Controller 
+class Activity extends CI_Controller 
 {
 	public function __construct() 
 	{
@@ -14,7 +14,7 @@ class Project extends CI_Controller
 		if($this->admin_user_m->check_login() === FALSE) {
 			redirect('/admin/index');
 		}
-		$this->load->model('project_m');
+		$this->load->model('activity_m');
 		$this->load->helper('form');
 	}
 
@@ -26,12 +26,12 @@ class Project extends CI_Controller
 			$p = 1;
 		}
 	
-		$data['projects'] = $this->project_m->get_list($per_page, ($p - 1) * $per_page);
+		$data['activities'] = $this->activity_m->get_list($per_page, ($p - 1) * $per_page);
 		$data['page_html'] =  $this->_page_init($per_page);
 	
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/project.php', $data);
+		$this->load->view('admin/activity.php', $data);
 		$this->load->view('admin/footer.php');
 	}
 	
@@ -39,9 +39,9 @@ class Project extends CI_Controller
 	{
 		$this->load->library('pagination');
 	
-		$config['total_rows'] = $this->project_m->get_num();
+		$config['total_rows'] = $this->activity_m->get_num();
 		$config['per_page'] = $per_page;
-		$config['base_url'] = '/admin/project/?';
+		$config['base_url'] = '/admin/activity/?';
 		$config['num_links'] = 10;
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = '首页';
@@ -59,9 +59,9 @@ class Project extends CI_Controller
 	{
 		$id = (int) $this->input->get('id');
 		if($id > 0) {
-			$this->project_m->del($id);
+			$this->activity_m->del($id);
 		}
-		redirect('/admin/project/');
+		redirect('/admin/activity/');
 	}
 	
 	public function edit() 
@@ -75,8 +75,8 @@ class Project extends CI_Controller
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
 		//上传图片
-		$project_pic = new Uploader_ue( "upfile" , $config);
-		$info = $project_pic->getFileInfo();
+		$activity_pic = new Uploader_ue( "upfile" , $config);
+		$info = $activity_pic->getFileInfo();
 		if($info['state'] == 'SUCCESS') {
 			$data['photo'] = $make_url . $info['url'];
 		}
@@ -87,8 +87,8 @@ class Project extends CI_Controller
 		$data['content'] = $this->input->post('ue_content') . '';
 		$data['index'] = $this->input->post('index', TRUE);
 
-		$this->project_m->edit($id, $data);
-		redirect('/admin/project/');
+		$this->activity_m->edit($id, $data);
+		redirect('/admin/activity/');
 	}
 	
 	public function add()
@@ -102,8 +102,8 @@ class Project extends CI_Controller
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp", '.PNG'  )
 		);
 		//上传图片
-		$project_pic = new Uploader_ue( "upfile" , $config);
-		$info = $project_pic->getFileInfo();
+		$activity_pic = new Uploader_ue( "upfile" , $config);
+		$info = $activity_pic->getFileInfo();
 		if($info['state'] == 'SUCCESS') {
 			$data['photo'] = $make_url . $info['url'];
 		}
@@ -113,21 +113,21 @@ class Project extends CI_Controller
 		$data['index'] = $this->input->post('index', TRUE);
 		$data['add_time'] = time();
 		
-		$this->project_m->add($data);
-		redirect('/admin/project/');
+		$this->activity_m->add($data);
+		redirect('/admin/activity/');
 	}
 	public function edit_v()
 	{
 		$id = (int) $this->input->get('id');
 		if($id < 0) {
-			redirect('/admin/project/');
+			redirect('/admin/activity/');
 		}
-		$data = $this->project_m->get($id);
-		$data['form_url'] = '/admin/project/edit/?id='. $id;
+		$data = $this->activity_m->get($id);
+		$data['form_url'] = '/admin/activity/edit/?id='. $id;
 	
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/project_add.php', $data);
+		$this->load->view('admin/activity_add.php', $data);
 		$this->load->view('admin/footer.php');
 	}
 	
@@ -137,11 +137,11 @@ class Project extends CI_Controller
 		$data['content'] ='';
 		$data['index'] = 0;
 		
-		$data['form_url'] = '/admin/project/add';
+		$data['form_url'] = '/admin/activity/add';
 		
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/project_add.php', $data);
+		$this->load->view('admin/activity_add.php', $data);
 		$this->load->view('admin/footer.php');
 	}
 }

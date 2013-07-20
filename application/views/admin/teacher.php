@@ -12,8 +12,8 @@
 							<td width="5%">排序</td>
 							<td width="15%">姓名</td>
 							<td width="20%">图片预览</td>
-							<td width="40%">职业资质</td>
-							<td width="10%">操作</td>
+							<td width="38%">职业资质</td>
+							<td width="12%">操作</td>
 						</tr>
 						<?php foreach ($teachers as $teacher): ?>
 						<tr>
@@ -22,12 +22,17 @@
 							<td><img src="<?php echo base_url($teacher['photo']);?>" title="<?php echo $teacher['name'];?>" width="102" height="132" /></td>
 							<td><?php echo $teacher['position'];?></td>
 							<td>
+								<a href="<?php echo base_url('/teacher/?id=' . $teacher['id']); ?>" target="_blank">查看</a>
 								<a href="<?php echo base_url('/admin/teacher/edit_v/?id=' . $teacher['id']); ?>">编辑</a>
 								<a onclick="return del_alert()" href="<?php echo base_url('/admin/teacher/del/?id=' . $teacher['id']) ; ?>">删除</a>
 							</td>
 						</tr>
 						<?php endforeach;?>
 					</table>
+					<div class="page">
+						<?php echo $page_html; ?>
+
+					</div>
 				</div>
 			</div>
 		</div>

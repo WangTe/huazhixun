@@ -113,6 +113,7 @@ class Teacher extends CI_Controller
 		$data['position'] = $this->input->post('position', TRUE) . '';
 		$data['intro'] = $this->input->post('ue_content') . '';
 		$data['index'] = $this->input->post('index', TRUE);
+		$data['add_time'] = time();
 		
 		$this->teacher_m->add($data);
 		redirect('/admin/teacher/');

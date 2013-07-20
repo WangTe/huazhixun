@@ -37,6 +37,17 @@ class Course_m extends CI_Model
 		return $return;
 	}
 	
+	public function get_index_list($limit)
+	{
+		$return = array();
+	
+		$this->db->where('index >', 0);
+		$this->db->order_by('index DESC, id DESC');
+		$query = $this->db->get('courses', $limit);
+		$return = $query->result_array();
+		return $return;
+	}
+	
 	public function get_num($type = '')
 	{
 		if($type != '') {
