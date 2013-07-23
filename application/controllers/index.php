@@ -10,6 +10,7 @@ class Index extends CI_Controller
 		parent::__construct();
 		$this->load->model('article_m');
 		$this->load->model('index_img_m');
+		$this->load->model('teacher_m');
 		$this->load->model('link_m');
 	}
 
@@ -18,13 +19,15 @@ class Index extends CI_Controller
 	 */
 	public function index() 
 	{
-		$data['news'] = $this->article_m->get_list(8, 0, 2);
+		/*$data['news'] = $this->article_m->get_list(8, 0, 2);
 		$data['notice'] = $this->article_m->get_list(8, 0, 9);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
 		$data['ad_img_num'] = count($data['ad_img']);
-		$data['links'] = $this->link_m->get_list();
+		$data['links'] = $this->link_m->get_list();*/
 		
-		$this->load->view('header.php', $data);
+		$data['news'] = $this->article_m->get_list(8, 0, 2);
+		
+		$this->load->view('header.php');
 		$this->load->view('index.php', $data);
 		$this->load->view('footer.php');
 		//$this->load->view('new_index.php');

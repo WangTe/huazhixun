@@ -7,13 +7,15 @@
 			</div>
 			<div class="index_content" style="width:960px">
 				<ul class="index_content_teacher">
+				
 					<li>
 						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-					</li><li>
+					</li>
+					<li>
 						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
@@ -164,6 +166,11 @@
 			</div>
 			<div class="index_content_announcement">
 				<ul>
+					<?php foreach ($news as $n): ?>
+					<li><a href="<?php echo base_url('/article/?aid=' . $n['aid']); ?>"><p><?php echo $n['title']?></p></a>
+					<?php endforeach; ?>
+				</ul>
+				<!-- <ul>
 					<li>
 						<a href="#"><p>海归博士疑因成果归属问题自毁实验室研究标本</p></a>
 					</li>
@@ -182,7 +189,7 @@
 					<li>
 						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 		<div id="link">
