@@ -84,6 +84,7 @@ class Course extends CI_Controller
 		
 		$id = (int) $this->input->get('id');
 		$data['name'] = $this->input->post('name', TRUE) . '';
+		$data['professor'] = $this->input->post('professor', TRUE) . '';		
 		$data['type'] = $this->input->post('type', TRUE) . '';
 		$data['content'] = $this->input->post('ue_content') . '';
 		$data['index'] = $this->input->post('index', TRUE);
@@ -110,6 +111,7 @@ class Course extends CI_Controller
 		}
 		
 		$data['name'] = $this->input->post('name', TRUE) . '';
+		$data['professor'] = $this->input->post('professor', TRUE) . '';		
 		$data['type'] = $this->input->post('type', TRUE) . '';
 		$data['content'] = $this->input->post('ue_content') . '';
 		$data['index'] = $this->input->post('index', TRUE);
@@ -136,6 +138,7 @@ class Course extends CI_Controller
 	public function add_v()
 	{
 		$data['name'] = '';
+		$data['professor'] = '';		
 		$data['type'] = '';
 		$data['content'] ='';
 		$data['index'] = 0;

@@ -12,6 +12,12 @@ class Index extends CI_Controller
 		$this->load->model('index_img_m');
 		$this->load->model('teacher_m');
 		$this->load->model('link_m');
+		$this->load->model('project_m');
+		$this->load->model('activity_m');
+		$this->load->model('course_m');
+		$this->load->helper('url');
+		
+		
 	}
 
 	/**
@@ -26,6 +32,11 @@ class Index extends CI_Controller
 		$data['links'] = $this->link_m->get_list();*/
 		
 		$data['news'] = $this->article_m->get_list(8, 0, 2);
+		$data['teachers'] = $this->teacher_m->get_list(7, 0);//type_input?
+		$data['projects'] = $this->project_m->get_list(4, 0);
+		$data['activities'] = $this->activity_m->get_list(4, 0);
+		$data['courses'] = $this->course_m->get_list(5, 0);
+		
 		
 		$this->load->view('header.php');
 		$this->load->view('index.php', $data);
