@@ -11,14 +11,16 @@
 						<tr class="title_3">
 							<td width="4%">排序</td>
 							<td width="33%">课程名</td>
-							<td width="15%">课程类型</td>
+							<td width="8%">课程主讲</td>							
+							<td width="8%">课程类型</td>
 							<td width="17%">图片预览</td>
-							<td width="12%">操作</td>
+							<td width="11%">操作</td>
 						</tr>
 						<?php foreach ($courses as $course): ?>
 						<tr>
 							<td><?php echo $course['index'];?></td>
 							<td><?php echo $course['name'];?></td>
+							<td><?php echo $course['professor'];?></td>							
 							<td><?php echo $course['type'];?></td>
 							<td><img src="<?php echo base_url($course['photo']);?>" title="<?php echo $course['name'];?>" width="147" height="101" /></td>
 							<td>
