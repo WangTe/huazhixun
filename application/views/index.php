@@ -1,7 +1,7 @@
 <div class="box">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="#"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
+				<a class="f_l" href="/teacher"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
 				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
