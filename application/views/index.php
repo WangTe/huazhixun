@@ -7,7 +7,6 @@
 			</div>
 			<div class="index_content" style="width:960px">
 				<ul class="index_content_teacher">
-				
 					<li>
 						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
 						<div>
