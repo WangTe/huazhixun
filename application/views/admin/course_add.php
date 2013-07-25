@@ -18,6 +18,10 @@
 								<td><input name="name" type="text" value="<?php echo $name;?>" size="80" /></td>
 							</tr>
 							<tr>
+								<td>课程主讲</td>
+								<td><input name="professor" type="text" value="<?php echo $professor;?>" size="80" /></td>
+							</tr>							
+							<tr>
 								<td>课程类型</td>
 								<td width="91%"><input name="type" type="text" value="<?php echo $type;?>" size="80" /></td>
 							</tr>

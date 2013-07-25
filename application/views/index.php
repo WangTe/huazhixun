@@ -7,18 +7,21 @@
 			</div>
 			<div class="index_content" style="width:960px">
 				<ul class="index_content_teacher">
+				    <?php foreach ($teachers as $t): ?>
 					<li>
+						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="102" height="132" /></a><!-- inseret_img? -->
+						<div>
+							<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><p class="t_center"><?php  echo $t['name'];?></p></a>
+							<p class="teacher_remark"><?php  echo $t['position'];?></p>
+						</div>
+					</li>
+					<?php endforeach; ?>
+					<!-- <li>
 						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
 						<div>
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-					</li><li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
 					</li>
 					<li>
 						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
@@ -54,7 +57,7 @@
 							<a href="#"><p class="t_center">杨帆</p></a>
 							<p class="teacher_remark">中国高企委特聘专家</p>
 						</div>
-					</li>
+					</li>-->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -67,7 +70,14 @@
 			</div>
 			<div class="index_content" style="width:960px">
 				<ul class="index_content_course">
+				    <?php foreach ($courses as $c):?>
 					<li>
+						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/courses/?id=' . $c['id']); ?>"><img src="<?php echo base_url($c['photo']); ?>" width="147" height="101" /></a>
+						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/courses/?id=' . $c['id']); ?>"><p class="t_center"><?php  echo $c['name'];?></p></a>
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#"><?php  echo $c['professor'];?></a></p><!-- 主讲人-链接？ -->
+					</li>
+					<?php endforeach;?>
+					<!-- <li>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
@@ -86,12 +96,7 @@
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
 						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
-					</li>
-					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
-					</li>
+					</li> -->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -105,7 +110,13 @@
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
+				    <?php foreach ($projects as $p): ?>
 					<li>
+						<img src="<?php echo base_url($p['photo']); ?>" width="144" height="100" />
+						<div><p><?php  echo $p['name'];?> </p></div>
+					</li>
+					<?php endforeach;?>
+					<!-- <li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
@@ -116,11 +127,7 @@
 					<li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
-					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
+					</li> -->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -133,7 +140,13 @@
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
+				    <?php foreach($activities as $a): ?>
 					<li>
+						<img src="<?php echo base_url($a['photo']); ?>" width="144" height="100" />
+						<div><p><?php echo $a['name'];?> </p></div>
+					</li>
+					<?php endforeach;?>
+					<!-- <li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
 					</li>
@@ -144,11 +157,7 @@
 					<li>
 						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
 						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
-					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
+					</li> -->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -164,6 +173,11 @@
 			</div>
 			<div class="index_content_announcement">
 				<ul>
+					<?php foreach ($news as $n): ?>
+					<li><a href="<?php echo base_url('/article/?aid=' . $n['aid']); ?>"><p><?php echo $n['title'];?></p></a>
+					<?php endforeach; ?>
+				</ul>
+				<!-- <ul>
 					<li>
 						<a href="#"><p>海归博士疑因成果归属问题自毁实验室研究标本</p></a>
 					</li>
@@ -182,7 +196,7 @@
 					<li>
 						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 		<div id="link">
