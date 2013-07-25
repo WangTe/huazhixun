@@ -43,7 +43,7 @@ a:hover {
 .more {
 	font-size:12px!important;
 	font-weight:normal !important;
-	margin-top: 7px;
+	margin-top: 5px;
 	color:#16487d;
 }
 ul li {
@@ -191,7 +191,7 @@ ul li {
 	font-size:18px;
 	color:#333;
 	padding-left:10px;
-	padding-top:8px;
+	padding-top:10px;
 	width:190px;
 }
 .title_1 a {
@@ -232,6 +232,7 @@ ul li {
 .teacher_remark {
 	color:#909090;
 	margin-top:3px;
+	text-align:center;
 }
 .index_content_course {
 }
@@ -252,7 +253,7 @@ ul li {
 	white-space:nowrap;
 	overflow:hidden;
 	word-break:break-all;
-	width:132px;
+	width:145px;
 }
 .index_content_course li p{
 	margin-left:3px;
@@ -1199,7 +1200,6 @@ ul li {
 }
 .secondweb_right .title_1 {
 	width:270px;
-	background-color:rgb(253,216,128);
 }
 .right_item {
 	border:1px solid #ffad00;
