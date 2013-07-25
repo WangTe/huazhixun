@@ -85,6 +85,7 @@ class Teacher extends CI_Controller
 		$id = (int) $this->input->get('id');
 		$data['name'] = $this->input->post('name', TRUE) . '';
 		$data['position'] = $this->input->post('position', TRUE) . '';
+		$data['quality'] = $this->input->post('quality', TRUE) . '';		
 		$data['intro'] = $this->input->post('ue_content') . '';
 		$data['index'] = $this->input->post('index', TRUE);
 
@@ -111,6 +112,7 @@ class Teacher extends CI_Controller
 		
 		$data['name'] = $this->input->post('name', TRUE) . '';
 		$data['position'] = $this->input->post('position', TRUE) . '';
+		$data['quality'] = $this->input->post('quality', TRUE) . '';		
 		$data['intro'] = $this->input->post('ue_content') . '';
 		$data['index'] = $this->input->post('index', TRUE);
 		$data['add_time'] = time();
@@ -137,6 +139,7 @@ class Teacher extends CI_Controller
 	{
 		$data['name'] = '';
 		$data['position'] = '';
+		$data['quality'] = '';		
 		$data['intro'] ='';
 		$data['index'] = 0;
 		
