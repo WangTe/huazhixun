@@ -6,15 +6,15 @@
 	</div>
 	<div id="share_message">
 		<p>分享到：</p>
-		<a rel="nofollow" href="javascript:void((function(s,d,e){try{}catch(e){}var%20f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=1392530042'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><img src="static/common/img/sinaicon.gif" alt="分享到新浪微博" title="分享到新浪微博" border='0'></a>
-		<a href="javascript:void(0)" onclick="{ var _t = encodeURI(document.title);  var _url = encodeURI(window.location); var _appkey = '333cf198acc94876a684d043a6b48e14'; var _site = encodeURI; var _pic = ''; var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic; window.open( _u,'转播到腾讯微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );  };" ><IMG border=0 title="转播到腾讯微博" src="static/common/img/tencenticon.png" width=16 height=16></a>
+		<a rel="nofollow" href="javascript:void((function(s,d,e){try{}catch(e){}var%20f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=1392530042'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><img src="<?php echo base_url('static/common/img/sinaicon.gif') ?>" alt="分享到新浪微博" title="分享到新浪微博" border='0'></a>
+		<a href="javascript:void(0)" onclick="{ var _t = encodeURI(document.title);  var _url = encodeURI(window.location); var _appkey = '333cf198acc94876a684d043a6b48e14'; var _site = encodeURI; var _pic = ''; var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic; window.open( _u,'转播到腾讯微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );  };" ><IMG border=0 title="转播到腾讯微博" src="<?php echo base_url('static/common/img/tencenticon.png') ?>" width=16 height=16></a>
 		<a href="tencent://message/?uin=22062284" alt="杨老师" title="杨老师"><img src="http://wpa.qq.com/pa?p=1:22062284:4" border="0" /></a>
 		<!-- <a href="javascript:void((function(s,d,e){if(/renren\.com/.test(d.location))return;var f=’http://share.renren.com/share/buttonshare?link=’,u=d.location,l=d.title,p=[e(u),'&title=',e(l)].join(”);function%20a(){if(!window.open([f,p].join(”),’xnshare’,['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join(”)))u.href=[f,p].join(”);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent));" title="分享到人人网"><img border=0 title="转播到人人网" src="static/common/img/renren.png" width=16 height=16 /></a> -->
-		<a class="fav_renren" rel="nofollow" href="javascript:window.open('http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(document.location.href)+'&amp;title='+encodeURIComponent(document.title));void(0)"><img border=0 title="转播到人人网" src="static/common/img/renren.png" width=16 height=16 /></a>
+		<a class="fav_renren" rel="nofollow" href="javascript:window.open('http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(document.location.href)+'&amp;title='+encodeURIComponent(document.title));void(0)"><img border=0 title="转播到人人网" src="<?php echo base_url('static/common/img/renren.png')?>" width=16 height=16 /></a>
 		<div class="clear"></div>
 	</div>
 	<div class="teacher_pic">
-		<img src="static/common/img/杨帆.png" width="170" height="200" />
+		<img src="<?php echo base_url('static/common/img/杨帆.png'); ?>" width="170" height="200" />
 		<div class="f_l">
 			<p class="teacher_name_detail">杨帆&nbsp&nbsp<span>中国高企委特聘专家</span></p>
 			<p class="teacher_qualification">职业资质:</p>
@@ -47,19 +47,19 @@
 		<h2>部分精彩课程回顾：</h2>
 		<div>
 			<div class="course_review">
-				<a href="#"><img src="static/common/img/kecheng1.png" height="192" width="260" /></a>
+				<a href="#"><img src="<?php echo base_url('static/common/img/kecheng1.png')?>" height="192" width="260" /></a>
 				<p>聚成华企在线讲座</p>
 			</div>
 			<div class="course_review">
-				<a href="#"><img src="static/common/img/kecheng2.png" height="192" width="260" /></a>
+				<a href="#"><img src="<?php echo base_url('static/common/img/kecheng2.png')?>" height="192" width="260" /></a>
 				<p>首都机场《团队高效协作与执行》课程</p>
 			</div>
 			<div class="course_review">
-				<a href="#"><img src="static/common/img/kecheng3.png" height="192" width="260" /></a>
+				<a href="#"><img src="<?php echo base_url('static/common/img/kecheng3.png')?>" height="192" width="260" /></a>
 				<p>日照移动《班组建设提升》</p>
 			</div>
 			<div class="course_review">
-				<a href="#"><img src="static/common/img/kecheng4.png" height="192" width="260" /></a>
+				<a href="#"><img src="<?php echo base_url('static/common/img/kecheng4.png')?>" height="192" width="260" /></a>
 				<p>培训第二节班组建设高峰论坛嘉宾</p>
 			</div>
 			<div class="clear"></div>
