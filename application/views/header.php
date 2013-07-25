@@ -47,7 +47,7 @@
 <div id="header">
 	<div class="box">
 		<div id="logo">
-			<a href="#"><img src="static/common/img/logo.png" /></a>
+			<a href="#"><img src="<?php echo base_url('static/common/img/logo.png')?>" /></a>
 		</div>
 	    <div id="header_right">
         	<form action="<?php echo base_url(''); ?>" method="get">
@@ -63,7 +63,7 @@
         </div>
 		<div id="navi">
 	        <ul>
-	            <li><a href="<?php echo base_url(); ?>">首页</a></li>
+	            <li><a href="<?php echo base_url('')?>">首页</a></li>
 	            <li><a href="<?php echo base_url('')?>">讲师</a></li>
 	            <li><a href="<?php echo base_url('')?>">课程</a></li>
 	            <li><a href="<?php echo base_url('')?>">项目</a></li>

@@ -1,8 +1,8 @@
 <div class="box">
-<div id="myposition"><p><a href="#">首页</a>&nbsp&gt&gt&nbsp最新动态</p></div>
+<div id="myposition"><p><a href="#">首页</a>&nbsp&gt&gt&nbsp<a href="#">金牌讲师</a>&nbsp&gt&gt&nbsp杨帆</p></div>
 <div id="teacher_detail">
 	<div class="title_4">
-		<p>最新动态</p>
+		<p>金牌讲师</p>
 	</div>
 	<div id="share_message">
 		<p>分享到：</p>
@@ -13,19 +13,18 @@
 		<a class="fav_renren" rel="nofollow" href="javascript:window.open('http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(document.location.href)+'&amp;title='+encodeURIComponent(document.title));void(0)"><img border=0 title="转播到人人网" src="<?php echo base_url('static/common/img/renren.png')?>" width=16 height=16 /></a>
 		<div class="clear"></div>
 	</div>
-	<div id="content_right" class="list_content_right">
-        <div>
-            <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-            	<?php foreach ($news as $row): ?>
-                <tr>
-                    <td><p><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>"><?php echo $row['title'];?></a></p></td>
-                    <td width="200" align="center"><?php echo $row['add_date']; ?></td>
-                </tr>
-                <?php endforeach; ?>
-            </table>
-        </div>
-        <!-- <div id="page">
-        	<?php echo $page_html; ?>
-        </div> -->
-    </div>
+	<div class="teacher_list">
+		<ul>
+			<?php for($i=1; $i<=20; $i++):?>
+			<li <?php if(($i-1)/5%2==1) echo 'class="bg_249"'; if(($i-1)%5==0) echo 'style="padding-left:31px;"'; if(($i-1)%5==4) echo 'style="padding-right:21px;"';?>>
+				<a href="#"><img src="<?php echo base_url('static/common/img/杨帆.png')?>" width="102" height="132" /></a>
+				<div>
+					<a href="#"><p class="t_center">杨帆</p></a>
+					<p class="teacher_remark">中国高企委特聘专家</p>
+				</div>
+			</li>
+			<?php endfor ?>
+			<div class="clear"></div>
+		</ul>
+	</div>
 </div>

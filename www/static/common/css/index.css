@@ -43,7 +43,7 @@ a:hover {
 .more {
 	font-size:12px!important;
 	font-weight:normal !important;
-	margin-top: 7px;
+	margin-top: 5px;
 	color:#16487d;
 }
 ul li {
@@ -172,13 +172,6 @@ ul li {
 	padding-bottom:8px;
 	background-color:#fff;
 }
-#content_right {
-	margin-top:5px;
-	margin-left:12px;
-	float:left;
-	width:708px;
-	line-height: 22px;
-}
 .title_1 {
 	background-color:rgb(250, 250, 250);
 	height:38px;
@@ -191,7 +184,7 @@ ul li {
 	font-size:18px;
 	color:#333;
 	padding-left:10px;
-	padding-top:8px;
+	padding-top:10px;
 	width:190px;
 }
 .title_1 a {
@@ -232,6 +225,7 @@ ul li {
 .teacher_remark {
 	color:#909090;
 	margin-top:3px;
+	text-align:center;
 }
 .index_content_course {
 }
@@ -252,7 +246,7 @@ ul li {
 	white-space:nowrap;
 	overflow:hidden;
 	word-break:break-all;
-	width:132px;
+	width:145px;
 }
 .index_content_course li p{
 	margin-left:3px;
@@ -655,16 +649,6 @@ ul li {
 /*list*/
 .list_content_right td {
 	line-height:26px;
-}
-.list_content_right td p {
-	overflow:hidden;
-	text-overflow:ellipsis;
-	width:590px;
-	background-image:url(../img/disc.png);
-	background-repeat:no-repeat;
-	background-position:0 center;
-	padding-left:15px;
-	white-space:nowrap;
 }
 .list_courses td p {
     width:390px !important;
@@ -1199,11 +1183,10 @@ ul li {
 }
 .secondweb_right .title_1 {
 	width:270px;
-	background-color:rgb(253,216,128);
 }
 .right_item {
 	border:1px solid #ffad00;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	background-color:#fff;
 }
 .right_item li {
@@ -1218,4 +1201,57 @@ ul li {
 }
 .right_item li a {
 	color:#000;
+}
+.teacher_list li {
+	float:left;
+	padding-left:11px;
+	padding-right:11px;	
+	padding-bottom:10px;
+	padding-top:10px;
+	border-bottom:1px solid #eee;
+}
+.teacher_list {
+	margin-top:10px;
+}
+.bg_249 {
+	background-color:rgb(249,249,249);
+}
+.teacher_list,.course_list .t_center {
+	margin-top:5px;
+}
+.course_list li {
+	float:left;
+	padding-left:11px;
+	padding-right:12px;	
+	padding-bottom:10px;
+	padding-top:10px;
+	border-bottom:1px solid #eee;
+}
+.course_list li p {
+	white-space:nowrap;
+	overflow:hidden;
+	word-break:break-all;
+	width:145px;
+}
+#teacher_detail td {
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #ddd;
+}
+#teacher_detail td a {
+	color:#000;
+}
+#content_right {
+	width:680px;
+	line-height: 22px;
+	margin-top:20px;
+	margin-bottom:5px;
+}
+.list_content_right td p {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	width:450px;
+	padding-left:15px;
+	font-size:14px;
+	white-space:nowrap;
 }
