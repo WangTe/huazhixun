@@ -28,8 +28,8 @@ class Index extends CI_Controller
 		/*$data['news'] = $this->article_m->get_list(8, 0, 2);
 		$data['notice'] = $this->article_m->get_list(8, 0, 9);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
-		$data['ad_img_num'] = count($data['ad_img']);
-		$data['links'] = $this->link_m->get_list();*/
+		$data['ad_img_num'] = count($data['ad_img']);*/
+		$data['links'] = $this->link_m->get_list();
 		
 		$data['news'] = $this->article_m->get_list(8, 0, 2);
 		$data['teachers'] = $this->teacher_m->get_list(7, 0);//type_input?
