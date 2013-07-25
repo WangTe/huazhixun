@@ -232,6 +232,7 @@ ul li {
 .teacher_remark {
 	color:#909090;
 	margin-top:3px;
+	text-align:center;
 }
 .index_content_course {
 }
@@ -252,7 +253,7 @@ ul li {
 	white-space:nowrap;
 	overflow:hidden;
 	word-break:break-all;
-	width:132px;
+	width:145px;
 }
 .index_content_course li p{
 	margin-left:3px;
