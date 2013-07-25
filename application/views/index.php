@@ -1,8 +1,8 @@
 <div class="box">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="/teacher"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
-				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/teacher/list');?>"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/teacher/list');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content" style="width:960px">
@@ -64,8 +64,8 @@
 		</div>
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="#"><p>主打课程<span>&nbspLeading Courses</span></p></a>
-				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/courses/list');?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/courses/list');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content" style="width:960px">
@@ -104,16 +104,16 @@
 	<div class="index_left">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="#"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
-				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/project/list');?>"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/project/list');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
 				    <?php foreach ($projects as $p): ?>
 					<li>
-						<img src="<?php echo base_url($p['photo']); ?>" width="144" height="100" />
-						<div><p><?php  echo $p['name'];?> </p></div>
+						<a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><img src="<?php echo base_url($p['photo']); ?>" width="144" height="100" /></a>
+						<div><a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><p><?php  echo $p['name'];?> </p></a></div>
 					</li>
 					<?php endforeach;?>
 					<!-- <li>
@@ -134,16 +134,16 @@
 		</div>
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="#"><p>公益<span>&nbspCommonweal</span></p></a>
-				<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/activity/list');?>"><p>公益<span>&nbspCommonweal</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/activity/list');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content">
 				<ul class="index_content_project">
 				    <?php foreach($activities as $a): ?>
 					<li>
-						<img src="<?php echo base_url($a['photo']); ?>" width="144" height="100" />
-						<div><p><?php echo $a['name'];?> </p></div>
+						<a href="<?php echo base_url('/activity/?id=' . $a['id']); ?>"><img src="<?php echo base_url($a['photo']); ?>" width="144" height="100" /></a>
+						<div><a href="<?php echo base_url('/activity/?id=' . $a['id']); ?>"><p><?php echo $a['name'];?> </p></a></div>
 					</li>
 					<?php endforeach;?>
 					<!-- <li>
@@ -169,7 +169,11 @@
 		</div> -->
 		<div class="index_left_item announcement">
 			<div class="title_1">
+<<<<<<< HEAD
 				<a href="#"><p>最新动态<span>&nbspLatest Dynamic</span></p></a>
+=======
+				<a href="<?php echo base_url('/article/list');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
+>>>>>>> 1d0f0d741b0cfd21f48f55b8e60306c71a197cda
 			</div>
 			<div class="index_content_announcement">
 				<ul>
@@ -201,15 +205,17 @@
 		</div>
 		<div id="link">
 			<div class="title_1">
-				<a href="#"><p>合作机构<span>&nbspCooperators</span></p></a>
+				<a href="<?php echo base_url('/link/list');?>"><p>友情链接<span>&nbspCooperators</span></p></a>
 			</div>
 		    <!-- <div class="f_l link_l"><b>友情链接：</b></div> -->
 		    <div>
 		        <ul>
-		            <li><a href="www.baidu.com" target="_blank" title="百度">百度</a></li>
-		            <li><a href="www.qq.com" target="_blank" title="腾讯">腾讯</a></li>
+		            <?php foreach ($links as $l):?>
+		            <li><a href="<?php echo $l['url']; ?>" target="_blank" title="<?php echo  $l['title']; ?>"><?php echo $l['name']; ?></a></li>
+		            <?php endforeach;?>
+		            <!-- <li><a href="www.qq.com" target="_blank" title="腾讯">腾讯</a></li>
 		            <li><a href="www.jd.com" target="_blank" title="京东商城">京东商城</a></li>
-		            <li><a href="www.taobao.com" target="_blank" title="淘宝网">淘宝网</a></li>
+		            <li><a href="www.taobao.com" target="_blank" title="淘宝网">淘宝网</a></li> -->
 		    		<div class="clear"></div>
 		        </ul>
 		    </div>
