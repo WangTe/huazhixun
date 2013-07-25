@@ -169,11 +169,8 @@
 		</div> -->
 		<div class="index_left_item announcement">
 			<div class="title_1">
-<<<<<<< HEAD
 				<a href="#"><p>最新动态<span>&nbspLatest Dynamic</span></p></a>
-=======
 				<a href="<?php echo base_url('/article/list');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
->>>>>>> 1d0f0d741b0cfd21f48f55b8e60306c71a197cda
 			</div>
 			<div class="index_content_announcement">
 				<ul>
