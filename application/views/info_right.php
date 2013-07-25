@@ -36,7 +36,7 @@
 	</div>
 	<div class="right_item">
 		<div class="title_1">
-			<a class="f_l" href="#"><p>教学视频<span>&nbspLasttest Papers</span></p></a>
+			<a class="f_l" href="#"><p>教学视频<span>&nbspTeaching Video</span></p></a>
 			<a class="f_r" href="#"><p class="more">更多 &gt;</p></a>
 			<div class="clear"></div>
 		</div>
