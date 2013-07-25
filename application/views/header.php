@@ -63,7 +63,7 @@
         </div>
 		<div id="navi">
 	        <ul>
-	            <li><a href="<?php echo base_url(); ?>">首页</a></li>
+	            <li><a href="<?php echo base_url('')?>">首页</a></li>
 	            <li><a href="<?php echo base_url('')?>">讲师</a></li>
 	            <li><a href="<?php echo base_url('')?>">课程</a></li>
 	            <li><a href="<?php echo base_url('')?>">项目</a></li>
