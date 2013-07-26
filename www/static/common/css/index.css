@@ -574,7 +574,7 @@ ul li {
 	text-align:center;
 }
 .news_main {
-	margin:10px 22px 0 22px;
+	margin:10px 30px 0 30px;
 	color:#333;
 	font-family: "宋体";
     word-wrap:break-word;
@@ -1236,7 +1236,7 @@ ul li {
 #teacher_detail td {
 	height:18px;
 	line-height:28px;
-	border-bottom:1px solid #ddd;
+	border-bottom:1px dashed #ddd;
     padding-left:5px;
 }
 
