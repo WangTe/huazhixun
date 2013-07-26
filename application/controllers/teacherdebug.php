@@ -39,7 +39,7 @@ class Teacherdebug extends CI_Controller
 		$data['links'] = $this->link_m->get_list();
 	
 		$this->load->view('header.php', $data);
-		$this->load->view('teacherlist.php', $data);
+		$this->load->view('teacher_list.php', $data);
 		$this->load->view('info_right.php', $data);
 		$this->load->view('footer.php');
 		//$this->load->view('new_index.php');
