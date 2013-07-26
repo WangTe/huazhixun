@@ -11,7 +11,10 @@ class Teacher extends CI_Controller
 		$this->load->model('article_m');
 		$this->load->model('index_img_m');
 		$this->load->model('link_m');
-		$this->load->model('teacher_m');		
+		$this->load->model('teacher_m');
+		$this->load->model('course_m');
+		$this->load->model('project_m');
+		
 	}
 
 	/**
@@ -26,6 +29,9 @@ class Teacher extends CI_Controller
 		$data['ad_img_num'] = count($data['ad_img']);
 		$data['links'] = $this->link_m->get_list();
 		$data['teacher'] = $this->teacher_m->get($id);
+		$data['courses'] = $this->course_m->get_index_list(8);
+		$data['projects'] = $this->project_m->get_index_list(8);
+		
 		
 		$this->load->view('header.php', $data);
 		$this->load->view('teacher_info.php', $data);

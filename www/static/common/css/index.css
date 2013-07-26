@@ -1188,19 +1188,28 @@ ul li {
 	border:1px solid #ffad00;
 	margin-bottom:10px;
 	background-color:#fff;
+    width:270px;
 }
 .right_item li {
 	color:#000;
 	height:24px;
+    width:246px;
 	line-height:24px;
 	background-image:url(../img/li_point.png);
 	background-repeat:no-repeat;
 	background-position:15px 9px;
 	background-color:transparent ;
 	text-indent:26px;
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+    overflow:hidden; 
 }
 .right_item li a {
 	color:#000;
+}
+.right_item li:hover {
+	text-overflow:inherit;
+	overflow:visible;
 }
 .teacher_list li {
 	float:left;
