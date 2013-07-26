@@ -34,6 +34,7 @@ class Articledebug extends CI_Controller
 	//文章呈现
 	public function showsingle()
 	{
+		
 		$data['article'] = $this->article_m->get(1);
 		$data['notice'] = $this->article_m->get_list(8, 0, 9);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
