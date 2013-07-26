@@ -16,48 +16,7 @@
 						</div>
 					</li>
 					<?php endforeach; ?>
-					<!-- <li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132" /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
-					</li>
-					<li>
-						<a href="#"><img src="static/common/img/杨帆.png" width="102" height="132"  /></a>
-						<div>
-							<a href="#"><p class="t_center">杨帆</p></a>
-							<p class="teacher_remark">中国高企委特聘专家</p>
-						</div>
-					</li>-->
+
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -77,26 +36,6 @@
 						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#"><?php  echo $c['professor'];?></a></p><!-- 主讲人-链接？ -->
 					</li>
 					<?php endforeach;?>
-					<!-- <li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
-					</li>
-					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
-					</li>
-					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
-					</li>
-					<li>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><img src="static/common/img/video_img4.jpg" width="147" height="101" /></a>
-						<a title="管理者素质能力提升与卓越团队建设" href="#"><p class="t_center">管理者素质能力提升与卓越团队建设</p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#">杨帆</a></p>
-					</li> -->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -116,18 +55,6 @@
 						<div><a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><p><?php  echo $p['name'];?> </p></a></div>
 					</li>
 					<?php endforeach;?>
-					<!-- <li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
-					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
-					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li> -->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -146,18 +73,6 @@
 						<div><a href="<?php echo base_url('/activity/?id=' . $a['id']); ?>"><p><?php echo $a['name'];?> </p></a></div>
 					</li>
 					<?php endforeach;?>
-					<!-- <li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
-					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li>
-					<li>
-						<img src="static/common/img/u001215d4o5_1.jpg" width="144" height="100" />
-						<div><p>WWDC是苹果公司一年一度的全球开发人员大会。 </p></div>
-					</li> -->
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -169,7 +84,7 @@
 		</div> -->
 		<div class="index_left_item announcement">
 			<div class="title_1">
-				<a href="<?php echo base_url('/article/list');?>"><p>最新动态<span>&nbspLatest Dynamic</span></p></a>
+				<a href="<?php echo base_url('/article/list');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
 			</div>
 			<div class="index_content_announcement">
 				<ul>
@@ -177,26 +92,6 @@
 					<li><a href="<?php echo base_url('/article/?aid=' . $n['aid']); ?>"><p><?php echo $n['title'];?></p></a>
 					<?php endforeach; ?>
 				</ul>
-				<!-- <ul>
-					<li>
-						<a href="#"><p>海归博士疑因成果归属问题自毁实验室研究标本</p></a>
-					</li>
-					<li>
-						<a href="#"><p>浙江教育行政部门和高校将实现官方微博“全覆盖”15</p></a>
-					</li>
-					<li>
-						<a href="#"><p>郑州：退役士兵可享免费职业教育</p></a>
-					</li>
-					<li>
-						<a href="#"><p>出国留学是赔还是赚 留学4年花费119万</p></a>
-					</li>
-					<li>
-						<a href="#"><p>求职季听求职故事 不签合同永远拿试用期工资</p></a>
-					</li>
-					<li>
-						<a href="#"><p>管理者素质能力提升与卓越团队建设</p></a>
-					</li>
-				</ul> -->
 			</div>
 		</div>
 		<div id="link">
@@ -209,9 +104,6 @@
 		            <?php foreach ($links as $l):?>
 		            <li><a href="<?php echo $l['url']; ?>" target="_blank" title="<?php echo  $l['title']; ?>"><?php echo $l['name']; ?></a></li>
 		            <?php endforeach;?>
-		            <!-- <li><a href="www.qq.com" target="_blank" title="腾讯">腾讯</a></li>
-		            <li><a href="www.jd.com" target="_blank" title="京东商城">京东商城</a></li>
-		            <li><a href="www.taobao.com" target="_blank" title="淘宝网">淘宝网</a></li> -->
 		    		<div class="clear"></div>
 		        </ul>
 		    </div>

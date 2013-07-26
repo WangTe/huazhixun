@@ -18,8 +18,12 @@
 								<td><input name="name" type="text" value="<?php echo $name;?>" size="80" /></td>
 							</tr>
 							<tr>
-								<td>职业资质</td>
+								<td>现任职位</td>
 								<td width="91%"><input name="position" type="text" value="<?php echo $position;?>" size="80" /></td>
+							</tr>							
+							<tr>
+								<td>职业资质</td>
+								<td width="91%"><textarea name="quality" rows="8" cols="55"><?php echo $quality;?></textarea></td>
 							</tr>
 							<tr>
 								<td>上传头像</td>
