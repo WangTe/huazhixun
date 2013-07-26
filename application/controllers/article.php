@@ -51,7 +51,6 @@ class Article extends CI_Controller
 		$data['title'] = $this->article_type_m->get_name($type);
 		
 		$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	1));
 		if($type == 6) {
 			$this->load->view('left_course.php');
 		} else if($type == 12) {
