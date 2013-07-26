@@ -32,10 +32,10 @@ class Index extends CI_Controller
 		$data['links'] = $this->link_m->get_list();
 		
 		$data['news'] = $this->article_m->get_list(8, 0, 2);
-		$data['teachers'] = $this->teacher_m->get_list(7, 0);//type_input?
-		$data['projects'] = $this->project_m->get_list(4, 0);
-		$data['activities'] = $this->activity_m->get_list(4, 0);
-		$data['courses'] = $this->course_m->get_list(5, 0);
+		$data['teachers'] = $this->teacher_m->get_index_list(7);
+		$data['projects'] = $this->project_m->get_index_list(4);
+		$data['activities'] = $this->activity_m->get_index_list(4);
+		$data['courses'] = $this->course_m->get_index_list(5);
 		
 		
 		$this->load->view('header.php');
