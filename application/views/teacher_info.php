@@ -2,7 +2,7 @@
 <div id="myposition"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>>&nbsp<a href="<?php echo base_url('/teacher/list');?>">金牌讲师</a>&nbsp>>&nbsp<?php echo $teacher['name']?></p></div><!-- id.人名 -->
 <div id="teacher_detail">
 	 <div class="title_4">
-		<p>金牌讲师&nbsp&nbsp杨帆</p>
+		<p>金牌讲师&nbsp&nbsp<?php echo $teacher['name']?></p>
 	</div>
 	<div id="share_message">
 		<p>分享到：</p>
@@ -14,7 +14,7 @@
 		<div class="clear"></div>
 	</div>
 	<div class="teacher_pic">
-		<img src="<?php base_url($teacher['photo']);?>" width="170" height="200" />
+		<img src="<?php echo base_url($teacher['photo']);?>" width="170" height="200" />
 		<div class="f_l">
 			<p class="teacher_name_detail"><?php  echo $teacher['name'];?>&nbsp&nbsp<span><?php  echo $teacher['position'];?></span></p>
 			<p class="teacher_qualification">职业资质:</p>

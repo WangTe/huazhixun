@@ -23,7 +23,7 @@
 							</tr>							
 							<tr>
 								<td>职业资质</td>
-								<td width="91%"><input name="quality" type="text" value="<?php echo $quality;?>" size="80" /></td>
+								<td width="91%"><input name="quality" type="textarea" rows="4" cols="1" value="<?php echo $quality;?>" size="80" /></td>
 							</tr>
 							<tr>
 								<td>上传头像</td>
