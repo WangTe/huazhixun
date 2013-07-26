@@ -9,6 +9,7 @@ class Article extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('article_m');
+		
 	}
 
 	/**
@@ -19,9 +20,10 @@ class Article extends CI_Controller
 		$aid = (int) $this->input->get('aid');
 		$data['article'] = $this->article_m->get($aid);
 		
+		
 		$this->load->view('header.php');
 		$this->load->view('img_1.php', array('img'	=>	1));
-		if(isset($data['article']['type']) && $data['article']['type'] == 6) {
+		/*if(isset($data['article']['type']) && $data['article']['type'] == 6) {
 			$this->load->view('left_course.php');
 		} elseif(isset($data['article']['type']) && $data['article']['type'] == 12) {
 			$this->load->view('left_alumni.php');
@@ -29,7 +31,7 @@ class Article extends CI_Controller
 			$this->load->view('left_policy.php');
 		} else {
 			$this->load->view('left_news.php');
-		}
+		}*/
 		$this->load->view('article.php', $data);
 		$this->load->view('footer.php');
 	}
@@ -45,13 +47,18 @@ class Article extends CI_Controller
 		if($type < 1) {
 			$type = 2;
 		}
+		$this->load->model('course_m');
+		$this->load->model('project_m');
+		$this->load->model('article_type_m');		
 		
-		$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
+		$data['news'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page);
-		$data['title'] = $this->article_type_m->get_name($type);
+		$data['title'] = $this->article_type_m->get_name($type);		
+		$data['courses'] = $this->course_m->get_list(8,0);
+		$data['projects'] = $this->project_m->get_list(8,0);		
 		
 		$this->load->view('header.php');
-		if($type == 6) {
+		/*if($type == 6) {
 			$this->load->view('left_course.php');
 		} else if($type == 12) {
 			$this->load->view('left_alumni.php');
@@ -59,8 +66,10 @@ class Article extends CI_Controller
 			$this->load->view('left_policy.php');
 		} else {
 			$this->load->view('left_news.php');
-		}
+		}*/
+		
 		$this->load->view('article_list.php', $data);
+		$this->load->view('info_right.php', $data);		
 		$this->load->view('footer.php');
 	}
 	
