@@ -56,6 +56,20 @@ class Course_m extends CI_Model
 		return $this->db->count_all_results('courses');
 	}
 	
+	public function get_search($keyword = '', $limit, $offset = 0, $type = 0)
+	{
+		$return = array();
+		$i = 0;
+		$this->db->select('id, type, name, add_time, index');
+		$this->db->like('name', $keyword);
+		$this->db->order_by('id DESC');
+		if($type != 0) {
+			$this->db->where('type', $type);
+		}
+		$query = $this->db->get('courses', $limit, $offset);
+		return $return;
+	}	
+	
 	public function add($data)
 	{
 		if($this->db->insert('courses', $data) === FALSE) {

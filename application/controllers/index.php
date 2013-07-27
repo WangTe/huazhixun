@@ -42,5 +42,5 @@ class Index extends CI_Controller
 		$this->load->view('index.php', $data);
 		$this->load->view('footer.php');
 		//$this->load->view('new_index.php');
-	}
+	}	
 }

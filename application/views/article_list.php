@@ -1,8 +1,8 @@
-<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<a href="<?php echo base_url('/article/type');?>">讲师动态</a><!-- &nbsp>&nbsp文章标题 --></p></div>
+<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<a href="<?php echo base_url('/article/type');?>"><?php echo $title;?></a><!-- &nbsp>&nbsp文章标题 --></p></div>
 <div class="box">
 	<div id="teacher_detail">
 		<div class="title_1">
-			<a class="f_l" href="<?php echo base_url('/teacher/list');?>"><p>讲师动态</p></a>
+			<a class="f_l" href="<?php echo base_url('/teacher/list');?>"><p><?php echo $title;?></p></a>
 			<div class="clear"></div>
 		</div>
 		<div id="content_right" class="list_content_right">
@@ -16,8 +16,8 @@
 	                <?php endforeach; ?>
 	            </table>
 	        </div>
-	        <!-- <div id="page">
+	        <div id="page">
 	        	<?php echo $page_html; ?>
-	        </div> -->
+	        </div> 
 	    </div>
 	</div>

@@ -23,15 +23,7 @@ class Article extends CI_Controller
 		
 		$this->load->view('header.php');
 		$this->load->view('img_1.php', array('img'	=>	1));
-		/*if(isset($data['article']['type']) && $data['article']['type'] == 6) {
-			$this->load->view('left_course.php');
-		} elseif(isset($data['article']['type']) && $data['article']['type'] == 12) {
-			$this->load->view('left_alumni.php');
-		} elseif($data['article']['type'] == 13 || $data['article']['type'] == 14 || $data['article']['type'] == 15 || $data['article']['type'] == 16) {
-			$this->load->view('left_policy.php');
-		} else {
-			$this->load->view('left_news.php');
-		}*/
+
 		$this->load->view('article.php', $data);
 		$this->load->view('footer.php');
 	}
@@ -57,16 +49,7 @@ class Article extends CI_Controller
 		$data['courses'] = $this->course_m->get_list(8,0);
 		$data['projects'] = $this->project_m->get_list(8,0);		
 		
-		$this->load->view('header.php');
-		/*if($type == 6) {
-			$this->load->view('left_course.php');
-		} else if($type == 12) {
-			$this->load->view('left_alumni.php');
-		} elseif($type == 13 || $type == 14 || $type == 15 || $type == 16) {
-			$this->load->view('left_policy.php');
-		} else {
-			$this->load->view('left_news.php');
-		}*/
+		$this->load->view('header.php');		
 		
 		$this->load->view('article_list.php', $data);
 		$this->load->view('info_right.php', $data);		
