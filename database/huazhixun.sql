@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 07 月 26 日 07:22
+-- 生成日期: 2013 年 07 月 27 日 14:21
 -- 服务器版本: 5.5.8
 -- PHP 版本: 5.3.4
 
@@ -132,8 +132,8 @@ INSERT INTO `np_article` (`aid`, `type`, `title`, `content`, `add_date`, `add_ti
 
 CREATE TABLE IF NOT EXISTS `np_article_type` (
   `tid` int(11) NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
+  `pid` int(11) NOT NULL,
   PRIMARY KEY (`tid`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
@@ -141,9 +141,8 @@ CREATE TABLE IF NOT EXISTS `np_article_type` (
 -- 转存表中的数据 `np_article_type`
 --
 
-INSERT INTO `np_article_type` (`tid`, `pid`, `name`) VALUES
-(1, 0, '新闻中心'),
-(2, 1, '讲师动态');
+INSERT INTO `np_article_type` (`tid`, `name`, `pid`) VALUES
+(2, '讲师动态', 0);
 
 -- --------------------------------------------------------
 
