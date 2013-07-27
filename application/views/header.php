@@ -63,12 +63,12 @@
         </div>
 		<div id="navi">
 	        <ul>
-	            <li><a href="<?php echo base_url('')?>">首页</a></li>
-	            <li><a href="<?php echo base_url('')?>">讲师</a></li>
-	            <li><a href="<?php echo base_url('')?>">课程</a></li>
-	            <li><a href="<?php echo base_url('')?>">项目</a></li>
-	            <li><a href="<?php echo base_url('')?>">动态</a></li>
-	            <li><a href="<?php echo base_url('')?>">公益</a></li>
+	            <li><a href="<?php echo base_url()?>">首页</a></li>
+	            <li><a href="<?php echo base_url('/teacher/type')?>">讲师</a></li>
+	            <li><a href="<?php echo base_url('/course/type')?>">课程</a></li>
+	            <li><a href="<?php echo base_url('/project/type')?>">项目</a></li>
+	            <li><a href="<?php echo base_url('/article/type')?>">动态</a></li>
+	            <li><a href="<?php echo base_url('/activity/type')?>">公益</a></li>
 	            <li>
 	            	<a href="<?php echo base_url('')?>">关于</a>
 	                <div class="naviout">

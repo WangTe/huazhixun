@@ -9,6 +9,8 @@ class Article extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('article_m');
+		$this->load->model('course_m');
+		$this->load->model('project_m');
 		
 	}
 
@@ -20,11 +22,13 @@ class Article extends CI_Controller
 		$aid = (int) $this->input->get('aid');
 		$data['article'] = $this->article_m->get($aid);
 		
-		
+		$data['news'] = $this->article_m->get_list(8);		
+		$data['course'] = $this->course_m->get_list(8);
+		$data['project'] = $this->project_m->get_list(8);
+				
 		$this->load->view('header.php');
-		//$this->load->view('img_1.php', array('img'	=>	1));
-
 		$this->load->view('article.php', $data);
+		$this->load->view('info_right.php', $data);		
 		$this->load->view('footer.php');
 	}
 	

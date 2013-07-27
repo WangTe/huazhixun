@@ -18,13 +18,16 @@ class Course extends CI_Controller
 	public function index() 
 	{
 		$id = (int) $this->input->get('id');
-		$data['course'] = $this->course_m->get($id);
+		$data['courser'] = $this->course_m->get($id);
+		/*$data['news'] = $this->article_m->get_list(8);
+		$data['course'] = $this->course_m->get_list(8);
+		$data['project'] = $this->project_m->get_list(8);
 		
-		
+		$this->load->model('project_m');
+		$this->load->model('article_m');*/		
 		$this->load->view('header.php');
-		//$this->load->view('img_1.php', array('img'	=>	1));
-
 		$this->load->view('course.php', $data);
+		/*$this->load->view('info_right.php', $data);*/
 		$this->load->view('footer.php');
 	}
 	

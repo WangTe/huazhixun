@@ -1,4 +1,4 @@
-<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp&gt&nbsp<a href="<?php echo base_url('/teacher/type');?>">金牌讲师</a>&nbsp&gt&nbsp<?php echo $teachers['name']?></p></div>
+<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp&gt&nbsp<a href="<?php echo base_url('/teacher/type');?>">金牌讲师</a></p></div>
 <div class="box">
 	<div id="teacher_detail">
 			<div class="title_1">

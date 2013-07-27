@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Course extends CI_Controller 
+class Activity extends CI_Controller 
 {	
 	/**
 	 * 构造函数
@@ -9,7 +9,7 @@ class Course extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('activity_m');
-		
+
 	}
 
 	/**
@@ -19,30 +19,33 @@ class Course extends CI_Controller
 	{
 		$id = (int) $this->input->get('id');
 		$data['activity'] = $this->activity_m->get($id);
+		/*$data['news'] = $this->article_m->get_list(8, 0, 2);
+		$data['course'] = $this->course_m->get_list(8);
+		$data['project'] = $this->project_m->get_list(8);
 		
+		$this->load->model('project_m');
+		$this->load->model('article_m');
+		$this->load->model('course_m');*/
 		
 		$this->load->view('header.php');
-		//$this->load->view('img_1.php', array('img'	=>	1));
-
 		$this->load->view('activity.php', $data);
+		//$this->load->view('info_right.php', $data);
 		$this->load->view('footer.php');
 	}
 	
 	public function type() 
 	{
 		$per_page = 20;
-		$type = (int) $this->input->get('type');
 		$p = (int) $this->input->get('p');
 		if($p < 1) {
 			$p = 1;
 		}
-		if($type < 1) {
-			$type = 2;
-		}
+
 		$this->load->model('project_m');
 		$this->load->model('article_m');
+		$this->load->model('course_m');
 		
-		$data['activities'] = $this->activity_m->get_list($per_page, $per_page * ($p - 1), $type);
+		$data['activities'] = $this->activity_m->get_list($per_page, $per_page * ($p - 1));
 		$data['page_html'] =  $this->_page_init($per_page);
 		$data['news'] = $this->article_m->get_list(8,0);
 		$data['project'] = $this->project_m->get_list(8,0);
@@ -70,7 +73,6 @@ class Course extends CI_Controller
 		$data['keyword'] = htmlspecialchars(urldecode($keyword));
 		
 		$this->load->view('header.php');
-		//$this->load->view('img_1.php', array('img'	=>	1));
 		$this->load->view('search.php', $data);
 		$this->load->view('footer.php');
 	}
@@ -78,14 +80,10 @@ class Course extends CI_Controller
 	private function _page_init($per_page)
 	{
 		$this->load->library('pagination');
-		$type = (int) $this->input->get('type');
-		if($type < 1) {
-			$type = 2;
-		}
-	
-		$config['total_rows'] = $this->activity_m->get_num($type);
+
+		$config['total_rows'] = $this->activity_m->get_num();
 		$config['per_page'] = $per_page;
-		$config['base_url'] = base_url('activity/type/?type=' . $type);
+		$config['base_url'] = base_url('activity/type' );
 		$config['num_links'] = 20;
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = '首页';
