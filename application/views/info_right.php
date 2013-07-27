@@ -1,13 +1,13 @@
 <div class="secondweb_right">
 	<div class="right_item">
 		<div class="title_1">
-			<a class="f_l" href="<?php echo base_url('/courses/list'); ?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
-			<a class="f_r" href="<?php echo base_url('/courses/list'); ?>"><p class="more">更多 &gt;</p></a>
+			<a class="f_l" href="<?php echo base_url('/course/list'); ?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
+			<a class="f_r" href="<?php echo base_url('/course/list'); ?>"><p class="more">更多 &gt;</p></a>
 			<div class="clear"></div>
 		</div>
 		<ul style="margin-top:10px;margin-bottom:10px;">
-			<?php foreach($courses as $c): ?>		
-			<li><a href="<?php echo base_url('/courses/?id=' . $c['id']); ?>"><?php echo $c['name']?></a></li>
+			<?php foreach($course as $c): ?>		
+			<li><a href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><?php echo $c['name']?></a></li>
 			<?php endforeach;?>
 			<!-- 
 			<li><a href="#">班组建设与班组长管理能力提升</a></li>
@@ -49,7 +49,7 @@
 			<div class="clear"></div>
 		</div>
 		<ul style="margin-top:10px;margin-bottom:15px;">
-			<?php foreach($projects as $p): ?>						
+			<?php foreach($project as $p): ?>						
 			<li><a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><?php echo $p['name']?></a></li>
 			<?php endforeach;?>						
 		</ul>

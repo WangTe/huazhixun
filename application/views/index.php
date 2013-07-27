@@ -1,8 +1,8 @@
 <div class="box">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/teacher/list');?>"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
-				<a class="f_r" href="<?php echo base_url('/teacher/list');?>"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/teacher/type');?>"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/teacher/type');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content" style="width:960px">
@@ -23,8 +23,8 @@
 		</div>
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/courses/list');?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
-				<a class="f_r" href="<?php echo base_url('/courses/list');?>"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/courses/type');?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/courses/type');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content" style="width:960px">
@@ -43,8 +43,8 @@
 	<div class="index_left">
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/project/list');?>"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
-				<a class="f_r" href="<?php echo base_url('/project/list');?>"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/project/type');?>"><p>咨询项目<span>&nbspJoint Projects</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/project/type');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content">
@@ -61,8 +61,8 @@
 		</div>
 		<div class="index_left_item">
 			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/activity/list');?>"><p>公益<span>&nbspCommonweal</span></p></a>
-				<a class="f_r" href="<?php echo base_url('/activity/list');?>"><p class="more">更多 &gt;</p></a>
+				<a class="f_l" href="<?php echo base_url('/activity/type');?>"><p>公益<span>&nbspCommonweal</span></p></a>
+				<a class="f_r" href="<?php echo base_url('/activity/type');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
 			</div>
 			<div class="index_content">
@@ -84,7 +84,7 @@
 		</div> -->
 		<div class="index_left_item announcement">
 			<div class="title_1">
-				<a href="<?php echo base_url('/article/list');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
+				<a href="<?php echo base_url('/article/type');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
 			</div>
 			<div class="index_content_announcement">
 				<ul>
@@ -96,7 +96,7 @@
 		</div>
 		<div id="link">
 			<div class="title_1">
-				<a href="<?php echo base_url('/link/list');?>"><p>友情链接<span>&nbspCooperators</span></p></a>
+				<a href="<?php echo base_url('/link/type');?>"><p>友情链接<span>&nbspCooperators</span></p></a>
 			</div>
 		    <!-- <div class="f_l link_l"><b>友情链接：</b></div> -->
 		    <div>

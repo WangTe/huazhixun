@@ -100,6 +100,7 @@ class Article_m extends CI_Model
 		return $this->db->count_all_results('article');
 	}
 	
+
 	public function get_search($keyword = '', $limit, $offset = 0, $type = 0) 
 	{
 		$return = array();

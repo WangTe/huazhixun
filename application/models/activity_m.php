@@ -56,6 +56,19 @@ class Activity_m extends CI_Model
 		return $this->db->count_all_results('activity');
 	}
 	
+	public function get_search($keyword = '', $limit, $offset = 0, $type = 0)
+	{
+		$return = array();
+		$i = 0;
+		$this->db->select('id, name, add_time, index');
+		$this->db->like('name', $keyword);
+		$this->db->order_by('id DESC');
+		if($type != 0) {
+			$this->db->where('type', $type);
+		}
+		$query = $this->db->get('activity', $limit, $offset);
+		return $return;
+	}	
 	public function add($data)
 	{
 		if($this->db->insert('activity', $data) === FALSE) {
