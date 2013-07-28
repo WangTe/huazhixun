@@ -11,7 +11,6 @@ class Article extends CI_Controller
 		$this->load->model('article_m');
 		$this->load->model('course_m');
 		$this->load->model('project_m');
-		
 	}
 
 	/**

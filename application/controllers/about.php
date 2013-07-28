@@ -9,6 +9,9 @@ class About extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('about_m');
+		$this->load->model('article_m');
+		$this->load->model('course_m');
+		$this->load->model('project_m');
 	}
 
 	/**
@@ -19,6 +22,10 @@ class About extends CI_Controller
 		$aid = (int) $this->input->get('aid');
 		
 		$data['about'] = $this->about_m->get($aid);
+		
+		$data['news'] = $this->article_m->get_list(8);
+		$data['course'] = $this->course_m->get_list(8);
+		$data['project'] = $this->project_m->get_list(8);
 
 		$left_navi['title'] = '关于我们';
 		$abouts = $this->about_m->get_list();
@@ -34,9 +41,8 @@ class About extends CI_Controller
 		}
 		
 		$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	7));
-		$this->load->view('left_navi.php', $left_navi);
 		$this->load->view('about.php', $data);
+		$this->load->view('info_right.php', $data);
 		$this->load->view('footer.php');
 	}
 }

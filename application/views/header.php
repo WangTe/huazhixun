@@ -70,12 +70,11 @@
 	            <li><a href="<?php echo base_url('/article/type')?>">动态</a></li>
 	            <li><a href="<?php echo base_url('/activity/type')?>">公益</a></li>
 	            <li>
-	            	<a href="<?php echo base_url('')?>">关于</a>
+	            	<a href="<?php echo base_url('/about')?>">关于</a>
 	                <div class="naviout">
-	                    <a href="<?php echo base_url('')?>">公司简介</a>
-	                    <a href="<?php echo base_url('')?>">荣誉资质</a>
-	                    <a href="<?php echo base_url('')?>">组织机构</a>
-	                    <a href="<?php echo base_url('')?>">联系我们</a>
+	                    <a href="<?php echo base_url('/about/?aid=1')?>">公司简介</a>
+	                    <a href="<?php echo base_url('/about/?aid=2')?>">荣誉资质</a>
+	                    <a href="<?php echo base_url('/about/?aid=3')?>">联系我们</a>
 	                </div>
 	            </li>
 	            <div class="clear"></div>
