@@ -1258,3 +1258,25 @@ ul li {
 	width:500px;
 	white-space:nowrap;
 }
+
+/* * 
+ * 课程信息  
+ * */
+.course_name_detail {
+	font-size:24px;
+	color:#d2771f;
+	height:30px;
+	font-family:"microsoft yaHei","微软雅黑",arial;
+	margin-top:10px;
+	margin-left:20px;
+	overflow:hidden;
+}
+.course_pic img {
+	margin-left:20px;
+	margin-top:10px;
+	padding-bottom:20px;
+	border-bottom:1px solid rgb(250,147,42);
+}
+.intro {
+	padding-bottom:20px;
+}
