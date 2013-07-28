@@ -3,7 +3,7 @@
 	<div id="teacher_detail">
 		<div class="course_pic">
 			<p class="course_name_detail">课程：<?php echo $courser['name']; ?></p>
-			<img src="<?php echo base_url($courser['photo']);?>" width="640" height="355" />
+			<a href="#"><img src="<?php echo base_url($courser['photo']);?>" width="640" height="355" /></a>
 		</div>
 		<div class="intro">
 			<h2>课程背景：</h2>
