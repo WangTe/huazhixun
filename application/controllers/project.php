@@ -9,7 +9,8 @@ class Project extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('project_m');
-
+		$this->load->model('article_m');
+		$this->load->model('course_m');
 	}
 
 	/**
@@ -20,15 +21,13 @@ class Project extends CI_Controller
 		$id = (int) $this->input->get('id');
 		$data['projecter'] = $this->project_m->get($id);	
 
-		/*$data['news'] = $this->article_m->get_list(8);
+		$data['news'] = $this->article_m->get_list(8);
 		$data['course'] = $this->course_m->get_list(8);
 		$data['project'] = $this->project_m->get_list(8);
 		
-		$this->load->model('article_m');
-		$this->load->model('course_m');*/
 		$this->load->view('header.php');
 		$this->load->view('project.php', $data);
-		//$this->load->view('info_right.php', $data);
+		$this->load->view('info_right.php', $data);
 		$this->load->view('footer.php');
 	}
 	
@@ -40,9 +39,6 @@ class Project extends CI_Controller
 		if($p < 1) {
 			$p = 1;
 		}
-
-		$this->load->model('course_m');
-		$this->load->model('article_m');
 		
 		$data['projects'] = $this->project_m->get_list($per_page, $per_page * ($p - 1));
 		$data['page_html'] =  $this->_page_init($per_page);

@@ -9,7 +9,9 @@ class Activity extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('activity_m');
-
+		$this->load->model('project_m');
+		$this->load->model('article_m');
+		$this->load->model('course_m');
 	}
 
 	/**
@@ -19,17 +21,14 @@ class Activity extends CI_Controller
 	{
 		$id = (int) $this->input->get('id');
 		$data['activity'] = $this->activity_m->get($id);
-		/*$data['news'] = $this->article_m->get_list(8, 0, 2);
+		$data['news'] = $this->article_m->get_list(8, 0, 2);
 		$data['course'] = $this->course_m->get_list(8);
 		$data['project'] = $this->project_m->get_list(8);
 		
-		$this->load->model('project_m');
-		$this->load->model('article_m');
-		$this->load->model('course_m');*/
 		
 		$this->load->view('header.php');
 		$this->load->view('activity.php', $data);
-		//$this->load->view('info_right.php', $data);
+		$this->load->view('info_right.php', $data);
 		$this->load->view('footer.php');
 	}
 	
