@@ -92,7 +92,7 @@
 }
 .naviout a {
 	background-color:rgb(45, 45, 45) !important;
-	color:#ababab !important;
+	color:#DFDFDF !important;
 	padding:0px;
 	width:96px;
 	text-align:center;
@@ -104,5 +104,9 @@
 .naviout a:hover {
     background-color: #000 !important;
     color:rgb(255,186,0) !important;
+}
+.navihover a {
+    background-color:rgb(45, 45, 45);
+    color:#DFDFDF !important;
 }
 /* 导航部分--end-- */
