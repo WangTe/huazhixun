@@ -1,10 +1,10 @@
 <div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp&gt&nbsp金牌讲师</p></div>
 <div class="box">
 	<div id="teacher_detail">
-			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/teacher/type');?>"><p>金牌讲师</p></a>
+		<div class="title_1">
+				<p class="f_l">金牌讲师</p>
 				<div class="clear"></div>
-			</div>
+		</div>
 		<div class="teacher_list">
 			<ul>
 				<?php foreach ($teachers as $t):?>

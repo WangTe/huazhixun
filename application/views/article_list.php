@@ -1,4 +1,4 @@
-<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<a href="<?php echo base_url('/article/type');?>"><?php echo $title;?></a><!-- &nbsp>&nbsp文章标题 --></p></div>
+<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<?php echo $title;?></p></div>
 <div class="box">
 	<div id="teacher_detail">
 		<div class="title_1">
