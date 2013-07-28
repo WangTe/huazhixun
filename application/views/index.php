@@ -33,7 +33,7 @@
 					<li>
 						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><img src="<?php echo base_url($c['photo']); ?>" width="147" height="101" /></a>
 						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><p class="t_center"><?php  echo $c['name'];?></p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#"><?php  echo $c['professor'];?></a></p>
+						<p class="course_remark"><span></span>&nbsp主讲人：<?php  echo $c['professor'];?></p>
 					</li>
 					<?php endforeach;?>
 					<div class="clear"></div>
@@ -52,7 +52,7 @@
 				    <?php foreach ($projects as $p): ?>
 					<li>
 						<a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><img src="<?php echo base_url($p['photo']); ?>" width="144" height="100" /></a>
-						<div><a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><p><?php  echo $p['name'];?> </p></a></div>
+						<div><a href="<?php echo base_url('/project/?id=' . $p['id']); ?>"><p class="t_center"><?php  echo $p['name'];?> </p></a></div>
 					</li>
 					<?php endforeach;?>
 					<div class="clear"></div>
@@ -70,7 +70,7 @@
 				    <?php foreach($activities as $a): ?>
 					<li>
 						<a href="<?php echo base_url('/activity/?id=' . $a['id']); ?>"><img src="<?php echo base_url($a['photo']); ?>" width="144" height="100" /></a>
-						<div><a href="<?php echo base_url('/activity/?id=' . $a['id']); ?>"><p><?php echo $a['name'];?> </p></a></div>
+						<div><a href="<?php echo base_url('/activity/?id=' . $a['id']); ?>"><p class="t_center"><?php echo $a['name'];?> </p></a></div>
 					</li>
 					<?php endforeach;?>
 					<div class="clear"></div>
@@ -93,7 +93,7 @@
 		</div>
 		<div id="link">
 			<div class="title_1">
-				<a href="<?php echo base_url('/link/type');?>"><p>友情链接<span>&nbspCooperators</span></p></a>
+				<p>友情链接<span>&nbspCooperators</span></p>
 			</div>
 		    <!-- <div class="f_l link_l"><b>友情链接：</b></div> -->
 		    <div>
