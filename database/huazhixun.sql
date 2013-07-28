@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 07 月 28 日 11:08
--- 服务器版本: 5.1.53
+-- 生成日期: 2013 年 07 月 28 日 07:54
+-- 服务器版本: 5.5.8
 -- PHP 版本: 5.3.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -58,12 +58,17 @@ CREATE TABLE IF NOT EXISTS `np_activity` (
   `add_time` int(10) unsigned NOT NULL,
   `index` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `np_activity`
 --
 
+INSERT INTO `np_activity` (`id`, `name`, `photo`, `content`, `add_time`, `index`) VALUES
+(1, 'MTP经理人管理才能发展培训', '/upload/20130728/13749927474580.jpg', '', 1374992747, 1),
+(2, '人事干部能力提升与管理探讨', '/upload/20130728/13749928886727.jpg', '', 1374992888, 1),
+(3, '团队情绪与压力管理', '/upload/20130728/13749932469287.jpg', '', 1374993246, 1),
+(4, '团队沟通', '/upload/20130728/13749933272501.jpg', '', 1374993327, 1);
 
 -- --------------------------------------------------------
 
@@ -105,12 +110,21 @@ CREATE TABLE IF NOT EXISTS `np_article` (
   `add_user` varchar(30) NOT NULL,
   PRIMARY KEY (`aid`),
   KEY `type` (`type`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `np_article`
 --
 
+INSERT INTO `np_article` (`aid`, `type`, `title`, `content`, `add_date`, `add_time`, `add_user`) VALUES
+(1, 2, '卓越班组建设与班组长胜任素质能力提升项目课程设置（暂定）', '0', '2013-07-28', 1374988912, 'wangte'),
+(2, 2, '解决问题高手的7个步骤', '0', '2013-07-28', 1374989055, 'wangte'),
+(3, 2, '从专业到管理的四项修炼', '0', '2013-07-28', 1374989081, 'wangte'),
+(4, 2, '卓越经理人的八项修炼（MTP）', '0', '2013-07-28', 1374989111, 'wangte'),
+(5, 2, '课程体系介绍', '0', '2013-07-28', 1374989145, 'wangte'),
+(6, 2, '销售管理三步上篮（通用版1天）', '', '2013-07-28', 1374989197, 'wangte'),
+(7, 2, '顾问式销售技巧（1天公开课丰满版）', '0', '2013-07-28', 1374989230, 'wangte'),
+(8, 2, '基于阳光心态的企业归属和团队信任再造', '0', '2013-07-28', 1374989266, 'wangte');
 
 -- --------------------------------------------------------
 
@@ -196,12 +210,21 @@ CREATE TABLE IF NOT EXISTS `np_courses` (
   `index` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `type` (`type`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `np_courses`
 --
 
+INSERT INTO `np_courses` (`id`, `type`, `name`, `photo`, `professor`, `content`, `add_time`, `index`) VALUES
+(1, '团队协作与执行', '《塑造团队高效执行力》', '/upload/20130728/13749948276454.png', '王大泓', '', 1374988229, 1),
+(2, '管理沟通', '《深度管理沟通》', '', '杨帆', '', 1374988349, 0),
+(3, '团队建设与管理', '《卓越团队建设与管理升级》', '', '辰辉', '', 1374988449, 0),
+(4, '企业执行', '《企业卓越执行力塑造》', '', '杨帆', '', 1374988516, 0),
+(5, '领导力', '《管理者卓越领导力》', '/upload/20130728/13749924498215.jpg', '杨帆', '', 1374989430, 1),
+(6, '应变与管理', '《企业应变策略与管理模式升级》', '/upload/20130728/13749922507358.png', '杨帆', '', 1374989498, 1),
+(7, '授权与激励', '《授权与激励》', '/upload/20130728/13749921587744.jpg', '杨帆', '', 1374989563, 1),
+(8, '领导力', '《组织卓越领导力建设》', '/upload/20130728/13749897129827.jpg', '王大泓', '', 1374989712, 1);
 
 -- --------------------------------------------------------
 
@@ -283,12 +306,17 @@ CREATE TABLE IF NOT EXISTS `np_project` (
   `add_time` int(11) NOT NULL,
   `index` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `np_project`
 --
 
+INSERT INTO `np_project` (`id`, `name`, `photo`, `content`, `add_time`, `index`) VALUES
+(1, '电话销售训练', '/upload/20130728/13749905857497.jpg', '', 1374990073, 1),
+(2, '顾问式销售', '/upload/20130728/13749905086943.png', '', 1374990107, 1),
+(3, '人力资本管理', '/upload/20130728/13749904476317.png', '', 1374990177, 1),
+(4, '企业卓越绩效管理', '/upload/20130728/13749902851618.png', '', 1374990217, 1);
 
 -- --------------------------------------------------------
 
@@ -306,9 +334,17 @@ CREATE TABLE IF NOT EXISTS `np_teacher` (
   `add_time` int(10) unsigned NOT NULL,
   `index` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- 转存表中的数据 `np_teacher`
 --
 
+INSERT INTO `np_teacher` (`id`, `name`, `photo`, `position`, `quality`, `intro`, `add_time`, `index`) VALUES
+(1, '杨帆', '/upload/20130728/1374985394521.png', '资深企业管理专家', '北大经济学院  特聘讲师\r\n北大政府管理学院  特聘讲师\r\n清华职业经理人训练中心  特聘讲师', '', 1374985394, 1),
+(2, '辰辉', '/upload/20130728/13749861188605.jpg', '资深企业管理咨询顾问', '清华同方  销售经理\r\n韩国三星  人力资源管理部门', '', 1374986118, 1),
+(3, '艾志鹏', '/upload/20130728/13749872034932.jpg', '人力资源管理实战专家', '资深企业管理咨询顾问\r\n三一重工集团\r\n葵花药业集团', '', 1374987203, 1),
+(4, '王大泓', '/upload/20130728/1374990857677.jpg', '中国国家职业教育网特聘专家', '全国高企委职业教育专业委员会  特聘专家\r\n清华大学职业经理人教育中心  特聘讲师\r\n北京大学  客座教授', '', 1374987562, 1),
+(5, '温耀南', '/upload/20130728/13749960935742.jpg', '销售', '清华大学金融理财班  特聘讲师\r\n科特勒营销机构    特聘讲师\r\n尚德机构   金牌讲师', '', 1374996093, 1),
+(6, '李刚', '/upload/20130728/13749965104608.jpg', 'EMBA班特聘讲师', '华润集团  副总经理\r\nSCANWELL集团  人力资源部经理\r\nSHANGRILA酒店管理集团  人力资源部总监', '', 1374996510, 1),
+(7, '王健勇', '/upload/20130728/13749979837213.jpg', '中国传媒大学总裁班', '中国人民大学博士\r\n中国光大银行   培训指导 ', '', 1374997983, 1);

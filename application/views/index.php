@@ -9,7 +9,7 @@
 				<ul class="index_content_teacher">
 				    <?php foreach ($teachers as $t): ?>
 					<li>
-						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="102" height="132" /></a><!-- inseret_img? -->
+						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="102" height="132" /></a>
 						<div>
 							<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><p class="t_center"><?php  echo $t['name'];?></p></a>
 							<p class="teacher_remark"><?php  echo $t['position'];?></p>
@@ -33,7 +33,7 @@
 					<li>
 						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><img src="<?php echo base_url($c['photo']); ?>" width="147" height="101" /></a>
 						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><p class="t_center"><?php  echo $c['name'];?></p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#"><?php  echo $c['professor'];?></a></p><!-- 主讲人-链接？ -->
+						<p class="course_remark"><span></span>&nbsp主讲人：<a href="#"><?php  echo $c['professor'];?></a></p>
 					</li>
 					<?php endforeach;?>
 					<div class="clear"></div>
@@ -79,9 +79,6 @@
 		</div>
 	</div>
 	<div class="index_right">
-		<!-- <div id="tiny_ad">
-			<img src="static/common/img/xiaotu2.jpg" width="228" />
-		</div> -->
 		<div class="index_left_item announcement">
 			<div class="title_1">
 				<a href="<?php echo base_url('/article/type');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>

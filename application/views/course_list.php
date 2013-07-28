@@ -8,7 +8,7 @@
 				<li>
 					<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><img src="<?php echo base_url($c['photo']); ?>" width="147" height="101" /></a>
 					<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><p class="t_center"><?php  echo $c['name'];?></p></a>
-					<p class="course_remark"><span></span>&nbsp主讲人：<a href="#"><?php  echo $c['professor'];?></a></p>
+					<p class="course_remark"><span></span>&nbsp主讲人：<?php  echo $c['professor'];?></p>
 				</li>
 				<?php $i++;?>
 				<?php endforeach ?>
