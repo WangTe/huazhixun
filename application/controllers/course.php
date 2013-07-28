@@ -38,8 +38,8 @@ class Course extends CI_Controller
 		if($p < 1) {
 			$p = 1;
 		}
-		if($type < 1) {
-			$type = 2;
+		if($type == FALSE) {
+			$type = '';
 		}
 		
 		$data['courses'] = $this->course_m->get_list($per_page, $per_page * ($p - 1), $type);
