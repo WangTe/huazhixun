@@ -25,7 +25,7 @@ class Course extends CI_Controller
 		$data['project'] = $this->project_m->get_list(8);
 		
 		$this->load->view('header.php');
-		$this->load->view('course.php', $data);
+		$this->load->view('course_info.php', $data);
 		$this->load->view('info_right.php', $data);
 		$this->load->view('footer.php');
 	}
