@@ -1,4 +1,4 @@
-<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<a href="<?php echo base_url('/course/list');?>">主打课程</a>&nbsp>&nbsp<?php echo $courser['name']?></p></div>
+<div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<a href="<?php echo base_url('/course/type');?>">主打课程</a>&nbsp>&nbsp<?php echo $courser['name']?></p></div>
 <div class="box">
 	<div id="teacher_detail">
 		<div class="course_pic">
