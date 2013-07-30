@@ -1263,14 +1263,14 @@ ul li {
     color:#d2771f;
     height:30px;
     font-family:"microsoft yaHei","微软雅黑",arial;
-    margin-top:10px;
+    margin-top:20px;
     margin-left:20px;
+    margin-bottom:10px;
     overflow:hidden;
     text-align: center;
 }
 .course_pic img {
-    margin-left:20px;
-    margin-top:10px;
+    margin:20px auto 20px auto;
+    display:block;
     padding-bottom:20px;
-    border-bottom:1px solid rgb(250,147,42);
 }
