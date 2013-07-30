@@ -9,7 +9,7 @@
 				<ul class="index_content_teacher">
 				    <?php foreach ($teachers as $t): ?>
 					<li>
-						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="102" height="132" /></a>
+						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="96" height="124" /></a>
 						<div>
 							<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><p class="t_center"><?php  echo $t['name'];?></p></a>
 							<p class="teacher_remark"><?php  echo $t['position'];?></p>
