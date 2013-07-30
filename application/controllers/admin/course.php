@@ -142,7 +142,8 @@ class Course extends CI_Controller
 		$data['type'] = '';
 		$data['content'] ='';
 		$data['index'] = 0;
-		
+		$data['photo'] = '';		
+				
 		$data['form_url'] = '/admin/course/add';
 		
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));

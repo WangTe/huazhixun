@@ -27,7 +27,7 @@
 							</tr>
 							<tr>
 								<td>上传头像</td>
-								<td><input name="upfile" type="file" value="" size="80" /></td>
+								<td><?php if (trim($photo) != ''):?><img src="<?php echo base_url($photo);?>" width="105" height="134" /><?php endif;?><input name="upfile" type="file" value="" size="80" /></td>
 							</tr>
 							<tr>
 								<td>讲师简介</td>

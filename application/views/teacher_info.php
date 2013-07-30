@@ -1,6 +1,6 @@
 <div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<a href="<?php echo base_url('/teacher/type');?>">金牌讲师</a>&nbsp>&nbsp<?php echo $teacher['name']?></p></div>
 <div class="box">
-	<div id="teacher_detail">
+	<div class="teacher_detail">
 		<div class="teacher_pic">
 			<img src="<?php echo base_url($teacher['photo']);?>" width="170" height="220" />
 			<div class="f_l">

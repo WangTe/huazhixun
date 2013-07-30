@@ -136,6 +136,7 @@ class Project extends CI_Controller
 		$data['name'] = '';
 		$data['content'] ='';
 		$data['index'] = 0;
+		$data['photo'] = '';
 		
 		$data['form_url'] = '/admin/project/add';
 		

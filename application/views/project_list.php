@@ -1,6 +1,6 @@
 <div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp&gt&nbsp咨询项目</p></div>
 <div class="box">
-	<div id="teacher_detail">
+	<div class="teacher_detail">
 			<div class="title_1">
 				<p class="f_l">咨询项目</p>
 				<div class="clear"></div>

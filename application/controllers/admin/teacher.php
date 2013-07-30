@@ -142,6 +142,7 @@ class Teacher extends CI_Controller
 		$data['quality'] = '';		
 		$data['intro'] ='';
 		$data['index'] = 0;
+		$data['photo'] = '';		
 		
 		$data['form_url'] = '/admin/teacher/add';
 		

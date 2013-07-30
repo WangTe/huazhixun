@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 var templates = [
-    {
+    /* {
         "pre":"pre0.png",
         'title':lang.blank,
         'preHtml':'<p class="ue_t">&nbsp;欢迎使用UEditor！</p>',
@@ -38,5 +38,18 @@ var templates = [
         'title':lang.sciPapers,
         'preHtml':'<h2 style="border-bottom-color:#cccccc;border-bottom-width:2px;border-bottom-style:solid;padding:0px 4px 0px 0px;margin:0px 0px 10px;text-align:center;" class="ue_t">[键入文章标题]</h2><p><strong><span style="font-size:12px;">摘要</span></strong><span style="font-size:12px;" class="ue_t">：这里可以输入很长很长很长很长很长很长很长很长很差的摘要</span></p><p style="line-height:1.5em;"><strong>标题 1</strong></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">这里可以输入很多内容，可以图文混排，可以有列表等。</span></p><p style="line-height:1.5em;"><strong>标题 2</strong></p><ol style="list-style-type:lower-alpha;"><li><p class="ue_t">列表 1</p></li><li><p class="ue_t">列表 2</p></li><ol style="list-style-type:lower-roman;"><li><p class="ue_t">多级列表 1</p></li><li><p class="ue_t">多级列表 2</p></li></ol><li><p class="ue_t">列表 3<br /></p></li></ol><p style="line-height:1.5em;"><strong>标题 3</strong></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">来个文字图文混排的</span></p><p style="text-indent:2em;"><br /></p>',
         'html':'<h2 style="border-bottom-color:#cccccc;border-bottom-width:2px;border-bottom-style:solid;padding:0px 4px 0px 0px;margin:0px 0px 10px;text-align:center;" class="ue_t">[键入文章标题]</h2><p><strong><span style="font-size:12px;">摘要</span></strong><span style="font-size:12px;" class="ue_t">：这里可以输入很长很长很长很长很长很长很长很长很差的摘要</span></p><p style="line-height:1.5em;"><strong>标题 1</strong></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">这里可以输入很多内容，可以图文混排，可以有列表等。</span></p><p style="line-height:1.5em;"><strong>标题 2</strong></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">来个列表瞅瞅：</span></p><ol style="list-style-type:lower-alpha;"><li><p class="ue_t">列表 1</p></li><li><p class="ue_t">列表 2</p></li><ol style="list-style-type:lower-roman;"><li><p class="ue_t">多级列表 1</p></li><li><p class="ue_t">多级列表 2</p></li></ol><li><p class="ue_t">列表 3<br /></p></li></ol><p style="line-height:1.5em;"><strong>标题 3</strong></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">来个文字图文混排的</span></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">这里可以多行</span></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">右边是图片</span></p><p style="text-indent:2em;"><span style="font-size:14px;" class="ue_t">绝对没有问题的，不信你也可以试试看</span></p><p><br /></p>'
+    },*/
+    {
+        "pre":"pre0.png",
+        'title':'teacher_info',
+        'preHtml':'teacher_info',
+        "html":'<p class="ue_t">欢迎使用UEditor！</p>'
+
+    },
+    {
+        "pre":"pre1.png",
+        'title':'course_info',
+        'preHtml':'course_info',        
+        'html':'<p style="text-align: center;"> <embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://player.youku.com/player.php/Type/Folder/Fid/19507612/Ob/1/sid/XNTg5NDg5NTQw/v.swf" width="640" height="480" wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true"/></p><p>[删除示例，插入链接视频]</p><div style="margin-top:20px;margin-right:35px;margin-bottom:35px;margin-left:35px;"><h2 style="width:600px;color:#d2771f;font-size:15px;font-weight:bold;margin-top:20px;margin-bottom:10px;">课程背景：[删除此句，在此添加 XXX内容]</h2><p style="text-indent:2em;color:#000;line-height:1.8em;">明确了战略目标[删除此句，在此添加 XXX内容]</p><h2 style="width:600px;color:#d2771f;font-size:15px;font-weight:bold;margin-top:20px;margin-bottom:10px;">课程受益：[删除此句，在此添加 XXX内容]</h2><p style="text-indent:2em;color:#000;line-height:1.8em;">掌握全新的管理“方法论”[删除此句，在此添加 XXX内容]</p><h2 style="width:600px;color:#d2771f;font-size:15px;font-weight:bold;margin-top:20px;margin-bottom:10px;">培训：[删除此句，在此添加 XXX内容]</h2><p style="text-indent:2em;color:#000;line-height:1.8em;">企业[删除此句，在此添加 XXX内容]</p><p style="text-indent:2em;color:#000;line-height:1.8em;">2天[删除此句，在此添加 XXX内容]</p><h2 style="width:600px;color:#d2771f;font-size:15px;font-weight:bold;margin-top:20px;margin-bottom:10px;">课程纲要：[删除此句，在此添加 XXX内容]</h2><p style="text-indent:2em;color:#000;line-height:1.8em;">第一单元：[删除此句，在此添加 XXX内容]</p><p style="text-indent:2em;color:#000;line-height:1.8em;">第二单元：[删除此句，在此添加 XXX内容]</p><p style="text-indent:2em;color:#000;line-height:1.8em;">第三单元：[删除此句，在此添加 XXX内容]</p><p style="text-indent:2em;color:#000;line-height:1.8em;">第四单元：[删除此句，在此添加 XXX内容]</p>'
     }
 ];

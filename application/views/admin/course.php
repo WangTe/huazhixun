@@ -1,7 +1,7 @@
 
 	<div id="right">
 		<div id="content">
-			<div class="title_2">讲师管理</div>
+			<div class="title_2">课程管理</div>
 			<div class="content">
 				<div class="func">
 					<a href="<?php echo base_url('/admin/course/add_v/'); ?>">添加</a>

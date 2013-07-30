@@ -1,6 +1,6 @@
 <div id="myposition" class="box"><p><a href="<?php echo base_url();?>">首页</a>&nbsp>&nbsp<?php echo $title;?></p></div>
 <div class="box">
-	<div id="teacher_detail">
+	<div class="teacher_detail">
 		<div class="title_1">
 			<a class="f_l" href="<?php echo base_url('/teacher/list');?>"><p><?php echo $title;?></p></a>
 			<div class="clear"></div>

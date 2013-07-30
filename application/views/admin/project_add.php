@@ -19,7 +19,7 @@
 							</tr>
 							<tr>
 								<td>项目图片</td>
-								<td><input name="upfile" type="file" value="" size="80" /></td>
+								<td><?php if (trim($photo) != ''):?><img src="<?php echo base_url($photo);?>" width="105" height="134" /><?php endif;?><input name="upfile" type="file" value="" size="80" /></td>
 							</tr>
 							<tr>
 								<td>项目简介</td>
