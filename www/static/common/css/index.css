@@ -270,8 +270,8 @@ ul li {
 	vertical-align:middle;
 }
 .index_content img {
-	border:#d0d0d0 solid 1px;
-	padding:2px;
+	border:#E5E5E5 solid 1px;
+	padding:5px;
 }
 .index_content_project li img {
 }
@@ -1120,11 +1120,11 @@ ul li {
 .teacher_name_detail {
 	font-size:22px;
 	font-weight:bold;
-	color:#000;
+	color:#fa932a;
 }
 .teacher_name_detail span {
 	font-size:14px;
-	color:rgb(250,147,42);
+	color:#666;
 }
 .teacher_qualification {
 	font-size:14px;
@@ -1139,9 +1139,7 @@ ul li {
 	color:#000;
 }
 .intro {
-	margin-top:20px;
-	margin-left:30px;
-	margin-right:30px;
+	margin: 20px 35px 35px 35px;
 }
 .intro .title_4 {
 	border-bottom:1px solid rgb(250,147,42);
@@ -1242,22 +1240,37 @@ ul li {
 	word-break:break-all;
 	width:145px;
 }
-#teacher_detail td {
+.teacher_pic td {
 	height:18px;
-	line-height:28px;
-	border-bottom:1px dashed #ddd;
-    padding-left:5px;
+	line-height:26px;
 }
-
+.teacher_pic table {
+    margin-top: 15px;
+}
 #content_right {
-	width:680px;
-	line-height: 22px;
-	margin-top:20px;
-	margin-bottom:5px;
+	line-height: 1.8em;
+	margin-top:10px;
+	margin-bottom:35px;
 }
 .list_content_right td p {
 	overflow:hidden;
 	text-overflow:ellipsis;
 	width:500px;
 	white-space:nowrap;
+}
+.course_name_detail {
+    font-size:22px;
+    color:#d2771f;
+    height:30px;
+    font-family:"microsoft yaHei","微软雅黑",arial;
+    margin-top:10px;
+    margin-left:20px;
+    overflow:hidden;
+    text-align: center;
+}
+.course_pic img {
+    margin-left:20px;
+    margin-top:10px;
+    padding-bottom:20px;
+    border-bottom:1px solid rgb(250,147,42);
 }
