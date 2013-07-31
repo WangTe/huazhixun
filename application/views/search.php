@@ -7,11 +7,11 @@
                         <td width="130" style="font-size: 14px;"><b>关键字搜索：</b></td>
                         <td width="80" style="font-size: 14px;">
                         	<select name="f">
-                        		<option value="article" <?php if($f == 'article') echo 'selected="selected'; ?>>文章</option>
-                        		<option value="teacher" <?php if($f == 'teacher') echo 'selected="selected'; ?>>讲师</option>
-                        		<option value="course" <?php if($f == 'course') echo 'selected="selected'; ?>>课程</option>
-                        		<option value="project" <?php if($f == 'project') echo 'selected="selected'; ?>>项目</option>
-                        		<option value="activity" <?php if($f == 'activity') echo 'selected="selected'; ?>>公益</option>
+                        		<option value="article" <?php if($f == 'article') echo 'selected="selected"'; ?>>文章</option>
+                        		<option value="teacher" <?php if($f == 'teacher') echo 'selected="selected"'; ?>>讲师</option>
+                        		<option value="course" <?php if($f == 'course') echo 'selected="selected"'; ?>>课程</option>
+                        		<option value="project" <?php if($f == 'project') echo 'selected="selected"'; ?>>项目</option>
+                        		<option value="activity" <?php if($f == 'activity') echo 'selected="selected"'; ?>>公益</option>
                         	</select>
                         </td>
                     	<td width="351"><input name="keyword" type="text" value="<?php echo $keyword; ?>" size="50" style="font-size: 14px; border: 1px solid #A6B4FF; padding: 4px;" /></td>
