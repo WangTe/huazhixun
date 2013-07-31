@@ -12,6 +12,7 @@ class About extends CI_Controller
 		$this->load->model('article_m');
 		$this->load->model('course_m');
 		$this->load->model('project_m');
+		$this->load->model('index_img_m');
 	}
 
 	/**
@@ -26,6 +27,8 @@ class About extends CI_Controller
 		$data['news'] = $this->article_m->get_list(8);
 		$data['course'] = $this->course_m->get_list(8);
 		$data['project'] = $this->project_m->get_list(8);
+		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
+		$data['ad_img_num'] = count($data['ad_img']);
 
 		$left_navi['title'] = '关于我们';
 		$abouts = $this->about_m->get_list();
@@ -40,9 +43,9 @@ class About extends CI_Controller
 			$data['about'] = $abouts[0];	
 		}
 		
-		$this->load->view('header.php');
-		$this->load->view('about.php', $data);
-		$this->load->view('info_right.php', $data);
+		$this->load->view('header.php', $data);
+		$this->load->view('about.php');
+		$this->load->view('info_right.php');
 		$this->load->view('footer.php');
 	}
 }
