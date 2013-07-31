@@ -32,7 +32,7 @@
 			<a href="<?php echo base_url('/'); ?>"><img src="<?php echo base_url('static/common/img/logo.png'); ?>" /></a>
 		</div>
 	    <div id="header_right">
-        	<form action="<?php echo base_url(''); ?>" method="get">
+        	<form action="<?php echo base_url('/search'); ?>" method="get">
         		<!-- <select name="items" class="select_item">
 	        		<option value="全部" selected="selected">全部</option>
 					<option value="讲师">讲师</option>
