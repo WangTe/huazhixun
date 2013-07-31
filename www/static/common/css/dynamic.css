@@ -12,13 +12,13 @@
     margin:0 auto;
     width:960px;
 	overflow:hidden;
-	height:120px;
+	height:180px;
 }
 #ad_img {
 	white-space:nowrap;
 }
 #ad_change .img_num {
-    top:95px;
+    top:158px;
     left:0px;
     position:absolute;
     z-index:1000;
@@ -34,10 +34,10 @@
     cursor:pointer;
     background:#FFF;
     font-weight:bold;
-    color:#709F11;
+    color:#d2771f;
 }
 #ad_change .img_numcheck {
-    background:#709F11!important;
+    background:#d2771f!important;
     color:#FFF!important;
 }
 /* 首页大图切换样式 --end-- */

@@ -11,6 +11,7 @@ class Article extends CI_Controller
 		$this->load->model('article_m');
 		$this->load->model('course_m');
 		$this->load->model('project_m');
+		$this->load->model('index_img_m');
 	}
 
 	/**
@@ -24,10 +25,12 @@ class Article extends CI_Controller
 		$data['news'] = $this->article_m->get_list(8);		
 		$data['course'] = $this->course_m->get_list(8);
 		$data['project'] = $this->project_m->get_list(8);
+		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
+		$data['ad_img_num'] = count($data['ad_img']);
 				
-		$this->load->view('header.php');
-		$this->load->view('article.php', $data);
-		$this->load->view('info_right.php', $data);		
+		$this->load->view('header.php', $data);
+		$this->load->view('article.php');
+		$this->load->view('info_right.php');		
 		$this->load->view('footer.php');
 	}
 	
@@ -51,12 +54,14 @@ class Article extends CI_Controller
 		$data['title'] = $this->article_type_m->get_name($type);		
 		$data['course'] = $this->course_m->get_list(8,0);
 		$data['project'] = $this->project_m->get_list(8,0);
-		$data['news'] = $this->article_m->get_list(8,0);		
+		$data['news'] = $this->article_m->get_list(8,0);
+		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
+		$data['ad_img_num'] = count($data['ad_img']);		
 		
-		$this->load->view('header.php');		
+		$this->load->view('header.php', $data);		
 		
-		$this->load->view('article_list.php', $data);
-		$this->load->view('info_right.php', $data);		
+		$this->load->view('article_list.php');
+		$this->load->view('info_right.php');		
 		$this->load->view('footer.php');
 	}
 	

@@ -83,13 +83,30 @@
 	    <div class="clear"></div>
     </div>
 </div>
-
-<div class="mainpic_bg">
+<div>
+	<div id="mainpic_index" class="box">
+	    <div id="ad_change">
+	        <div id="ad_img"> 
+	        	<?php foreach ($ad_img as $row): ?><a href="<?php echo $row['url']; ?>"><img src="<?php echo $row['path']; ?>" width="960" height="180" /></a><?php endforeach; ?>
+	        </div>
+	        <div class="img_num">
+	            <div style="float:right">
+	                <p class="img_numcheck">1</p>
+	                <?php for($i = 2; $i <= $ad_img_num; ++$i):?>
+	                <p><?php echo $i;?></p>
+	                
+	                <?php endfor; ?>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- <div class="mainpic_bg">
 	<div id="mainpic_index">
-	    <!-- <div id="ad_change">
+	    <div id="ad_change">
 	        <div id="ad_img"> 
 	        	<a href="#"><img src="static/common/img/13541035064144.jpg" width="960" height="120" /></a>
 	        </div>
-	    </div> -->
+	    </div>
 	</div>
-</div>
+</div> -->

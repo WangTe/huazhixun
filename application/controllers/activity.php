@@ -12,6 +12,7 @@ class Activity extends CI_Controller
 		$this->load->model('project_m');
 		$this->load->model('article_m');
 		$this->load->model('course_m');
+		$this->load->model('index_img_m');
 	}
 
 	/**
@@ -26,9 +27,9 @@ class Activity extends CI_Controller
 		$data['project'] = $this->project_m->get_list(8);
 		
 		
-		$this->load->view('header.php');
-		$this->load->view('activity.php', $data);
-		$this->load->view('info_right.php', $data);
+		$this->load->view('header.php', $data);
+		$this->load->view('activity.php');
+		$this->load->view('info_right.php');
 		$this->load->view('footer.php');
 	}
 	
@@ -50,10 +51,9 @@ class Activity extends CI_Controller
 		$data['project'] = $this->project_m->get_list(8,0);
 		$data['course'] = $this->course_m->get_list(8,0);		
 		
-		$this->load->view('header.php');		
-		
-		$this->load->view('activity_list.php', $data);
-		$this->load->view('info_right.php', $data);		
+		$this->load->view('header.php', $data);
+		$this->load->view('activity_list.php');
+		$this->load->view('info_right.php');		
 		$this->load->view('footer.php');
 	}
 	
