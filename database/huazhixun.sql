@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 07 月 28 日 12:13
--- 服务器版本: 5.5.8
+-- 生成日期: 2013 年 07 月 31 日 18:51
+-- 服务器版本: 5.1.53
 -- PHP 版本: 5.3.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -261,12 +261,17 @@ CREATE TABLE IF NOT EXISTS `np_index_img` (
   `url` varchar(200) NOT NULL,
   `order` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `np_index_img`
 --
 
+INSERT INTO `np_index_img` (`id`, `type`, `path`, `title`, `url`, `order`) VALUES
+(1, 1, '/upload/20130731/13752358638061.jpg', '', '#', 3),
+(2, 1, '/upload/20130731/13752358738389.jpg', '', '#', 0),
+(3, 1, '/upload/20130731/13752358827915.jpg', '', '#', 1),
+(4, 1, '/upload/20130731/13752358877006.jpg', '', '#', 2);
 
 -- --------------------------------------------------------
 
