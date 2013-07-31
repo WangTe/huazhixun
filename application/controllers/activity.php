@@ -25,7 +25,8 @@ class Activity extends CI_Controller
 		$data['news'] = $this->article_m->get_list(8, 0, 2);
 		$data['course'] = $this->course_m->get_list(8);
 		$data['project'] = $this->project_m->get_list(8);
-		
+		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
+		$data['ad_img_num'] = count($data['ad_img']);
 		
 		$this->load->view('header.php', $data);
 		$this->load->view('activity.php');
@@ -50,6 +51,8 @@ class Activity extends CI_Controller
 		$data['news'] = $this->article_m->get_list(8,0);
 		$data['project'] = $this->project_m->get_list(8,0);
 		$data['course'] = $this->course_m->get_list(8,0);		
+		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
+		$data['ad_img_num'] = count($data['ad_img']);
 		
 		$this->load->view('header.php', $data);
 		$this->load->view('activity_list.php');
@@ -71,8 +74,8 @@ class Activity extends CI_Controller
 		$data['page_html'] =  $this->_page_init_search($per_page, $total_rows);
 		$data['keyword'] = htmlspecialchars(urldecode($keyword));
 		
-		$this->load->view('header.php');
-		$this->load->view('search.php', $data);
+		$this->load->view('header.php', $data);
+		$this->load->view('search.php');
 		$this->load->view('footer.php');
 	}
 	
