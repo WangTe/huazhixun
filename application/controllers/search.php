@@ -8,6 +8,7 @@ class Search extends CI_Controller
 		$this->load->helper('form');
 		$this->load->model('search_m');
 		$this->load->model('index_img_m');
+		$this->load->helper('search_url');
 	}
 	
 	public function index() 

@@ -31,14 +31,14 @@
         <?php if($f == 'article' || trim($f) == ''): ?>
             <?php foreach($rows as $row): ?>
             <tr>
-            	<td><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>" target="_blank"><?php echo str_replace($keyword, '<font color="red">' . $keyword . '</font>', $row['title']); ?></a></td>
+            	<td><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>" target="_blank"><?php echo highlight_keyword($keyword, $row['title']); ?></a></td>
             	<td><?php echo date('Y-m-d', $row['add_time']); ?></td>
             </tr>
 			<?php endforeach; ?>
 		<?php else: ?>
             <?php foreach($rows as $row): ?>
             <tr>
-            	<td><a href="<?php echo base_url($f . '/?id=' . $row['id']); ?>" target="_blank"><?php echo str_replace($keyword, '<font color="red">' . $keyword . '</font>', $row['name']); ?></a></td>
+            	<td><a href="<?php echo base_url($f . '/?id=' . $row['id']); ?>" target="_blank"><?php echo highlight_keyword($keyword, $row['name']); ?></a></td>
             	<td><?php echo date('Y-m-d', $row['add_time']); ?></td>
             </tr>
 			<?php endforeach; ?>
