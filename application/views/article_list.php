@@ -7,7 +7,7 @@
 		</div>
 		<div id="content_right" class="list_content_right">
 	        <div>
-	            <table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+	            <table width="630" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto">
 	            	<?php foreach ($articles as $row): ?>
 	                <tr>
 	                    <td><p><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>"><?php echo $row['title'];?></a></p></td>
