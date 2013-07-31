@@ -582,6 +582,39 @@ class CI_DB_active_record extends CI_DB_driver {
 	{
 		return $this->_like($field, $match, 'AND ', $side);
 	}
+	
+	/**
+	 * 生成带括号的LIKE查询语句，如下
+	 * (field1 LIKE %match1% OR field2 LIKE %match2%)
+	 * 
+	 * @param array
+	 * @param string
+	 * @return object
+	 * @author 风格独特
+	 */
+	public function like_bracket($field, $match, $type = 'AND') 
+	{
+		$prefix = (count($this->ar_like) == 0) ? '' : $type;
+		
+		$k = $this->_protect_identifiers($field);
+		
+		foreach ($match as $v) {
+			$v = $this->escape_like_str($v);
+			
+			$like_statements[] = "$k LIKE '%{$v}%'";
+		}
+		$like_statement = implode(' AND ', $like_statements);
+		$like_statement = $prefix . '(' . $like_statement . ')';
+		
+		$this->ar_like[] = $like_statement;
+		if ($this->ar_caching === TRUE)
+		{
+			$this->ar_cache_like[] = $like_statement;
+			$this->ar_cache_exists[] = 'like';
+		}
+		
+		return $this;
+	}
 
 	// --------------------------------------------------------------------
 
