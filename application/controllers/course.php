@@ -12,6 +12,7 @@ class Course extends CI_Controller
 		$this->load->model('project_m');
 		$this->load->model('article_m');
 		$this->load->model('index_img_m');
+		$this->load->model('config_m');		
 	}
 
 	/**
@@ -26,6 +27,11 @@ class Course extends CI_Controller
 		$data['project'] = $this->project_m->get_list(8);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
 		$data['ad_img_num'] = count($data['ad_img']);
+		
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');
+		
 		
 		$this->load->view('header.php', $data);
 		$this->load->view('course_info.php');
@@ -53,6 +59,11 @@ class Course extends CI_Controller
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
 		$data['ad_img_num'] = count($data['ad_img']);	
 		
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');
+		
+		
 		$this->load->view('header.php', $data);		
 		
 		$this->load->view('course_list.php');
@@ -73,6 +84,11 @@ class Course extends CI_Controller
 		$total_rows = $this->course_m->get_num(0, $keyword);
 		$data['page_html'] =  $this->_page_init_search($per_page, $total_rows);
 		$data['keyword'] = htmlspecialchars(urldecode($keyword));
+		
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');
+		
 		
 		$this->load->view('header.php');
 		$this->load->view('search.php', $data);

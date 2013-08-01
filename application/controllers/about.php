@@ -13,6 +13,7 @@ class About extends CI_Controller
 		$this->load->model('course_m');
 		$this->load->model('project_m');
 		$this->load->model('index_img_m');
+		$this->load->model('config_m');		
 	}
 
 	/**
@@ -29,6 +30,10 @@ class About extends CI_Controller
 		$data['project'] = $this->project_m->get_list(8);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
 		$data['ad_img_num'] = count($data['ad_img']);
+		
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');		
 
 		$left_navi['title'] = '关于我们';
 		$abouts = $this->about_m->get_list();

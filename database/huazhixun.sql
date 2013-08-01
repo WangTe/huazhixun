@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 07 月 31 日 18:51
--- 服务器版本: 5.1.53
+-- 生成日期: 2013 年 08 月 01 日 08:35
+-- 服务器版本: 5.5.8
 -- PHP 版本: 5.3.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `np_article` (
   `add_user` varchar(30) NOT NULL,
   PRIMARY KEY (`aid`),
   KEY `type` (`type`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- 转存表中的数据 `np_article`
@@ -183,15 +183,17 @@ CREATE TABLE IF NOT EXISTS `np_config` (
   `is_json` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `item` (`item`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- 转存表中的数据 `np_config`
 --
 
 INSERT INTO `np_config` (`id`, `item`, `value`, `is_json`) VALUES
-(8, 'aa', 'aaa', 0),
-(7, 'bb', '[1,2,3]', 1);
+(10, 'address', 'xxxxxx', 0),
+(11, 'phone', 'xxxxxx', 0),
+(12, 'fax', 'xxxxxx', 0),
+(13, 'qq', '1246134763', 0);
 
 -- --------------------------------------------------------
 

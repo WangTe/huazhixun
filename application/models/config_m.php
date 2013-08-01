@@ -40,7 +40,7 @@ class Config_m extends CI_Model
 		}
 		return FALSE;
 	}
-	
+		
 	/**
 	 * 设置配置的值
 	 * 

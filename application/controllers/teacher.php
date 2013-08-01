@@ -15,6 +15,7 @@ class Teacher extends CI_Controller
 		$this->load->model('course_m');
 		$this->load->model('project_m');
 		$this->load->model('index_img_m');
+		$this->load->model('config_m');
 	}
 
 	/**
@@ -31,6 +32,11 @@ class Teacher extends CI_Controller
 		$data['teacher'] = $this->teacher_m->get($id);
 		$data['course'] = $this->course_m->get_list(8);
 		$data['project'] = $this->project_m->get_list(8);
+		
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');
+
 		
 		
 		$this->load->view('header.php', $data);
@@ -54,6 +60,11 @@ class Teacher extends CI_Controller
 		$data['course'] = $this->course_m->get_list(8,0);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
 		$data['ad_img_num'] = count($data['ad_img']);
+		
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');
+		
 		
 		$id = (int) $this->input->get('id');
 		$data['teacher'] = $this->teacher_m->get($id);
