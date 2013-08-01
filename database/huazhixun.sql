@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 08 月 01 日 08:35
--- 服务器版本: 5.5.8
+-- 生成日期: 2013 年 08 月 01 日 23:40
+-- 服务器版本: 5.1.53
 -- PHP 版本: 5.3.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -85,14 +85,15 @@ CREATE TABLE IF NOT EXISTS `np_admin_user` (
   `power` int(11) NOT NULL,
   `last_ip` varchar(48) NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `np_admin_user`
 --
 
 INSERT INTO `np_admin_user` (`uid`, `username`, `password`, `salt`, `name`, `power`, `last_ip`) VALUES
-(3, 'wangte', '7edec1ff2d4a904a4f19ce92cd648253', '422996', '王特', 0, '');
+(3, 'wangte', '7edec1ff2d4a904a4f19ce92cd648253', '422996', '王特', 0, ''),
+(4, 'adminhzx', '7edec1ff2d4a904a4f19ce92cd648253', '422996', '华智讯', 0, '');
 
 -- --------------------------------------------------------
 
@@ -193,7 +194,7 @@ INSERT INTO `np_config` (`id`, `item`, `value`, `is_json`) VALUES
 (10, 'address', 'xxxxxx', 0),
 (11, 'phone', 'xxxxxx', 0),
 (12, 'fax', 'xxxxxx', 0),
-(13, 'qq', '1246134763', 0);
+(13, 'qq', 'xxxxxx', 0);
 
 -- --------------------------------------------------------
 
