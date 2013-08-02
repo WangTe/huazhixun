@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 08 月 01 日 08:35
+-- 生成日期: 2013 年 08 月 02 日 04:05
 -- 服务器版本: 5.5.8
 -- PHP 版本: 5.3.4
 
@@ -183,17 +183,17 @@ CREATE TABLE IF NOT EXISTS `np_config` (
   `is_json` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `item` (`item`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
 
 --
 -- 转存表中的数据 `np_config`
 --
 
 INSERT INTO `np_config` (`id`, `item`, `value`, `is_json`) VALUES
-(10, 'address', 'xxxxxx', 0),
-(11, 'phone', 'xxxxxx', 0),
-(12, 'fax', 'xxxxxx', 0),
-(13, 'qq', '1246134763', 0);
+(22, 'address', 'xxxx', 0),
+(23, 'phone', 'xxxxxx', 0),
+(24, 'fax', 'xxxxxx', 0),
+(25, 'qq', '1246134763', 0);
 
 -- --------------------------------------------------------
 
@@ -287,7 +287,7 @@ CREATE TABLE IF NOT EXISTS `np_link` (
   `url` varchar(100) NOT NULL,
   `title` varchar(100) NOT NULL,
   PRIMARY KEY (`lid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- 转存表中的数据 `np_link`

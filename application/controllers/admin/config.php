@@ -20,12 +20,7 @@ class Config extends CI_Controller
 	
 	public function index() 
 	{		
-		$data['form_url'] = 'd=admin&c=config';
-		 
-		$this->config_m->set_item('address', 'xxxxxx');		
-		$this->config_m->set_item('phone', 'xxxxxx');		 
-		$this->config_m->set_item('fax', 'xxxxxx');		
-		$this->config_m->set_item('qq', 'xxxxxx');
+		$data['form_url'] = '/admin/config/edit';
 		
 		$data['address'] =$this->config_m->item('address');
 		$data['phone'] = $this->config_m->item('phone');
@@ -40,13 +35,21 @@ class Config extends CI_Controller
 
 	public function edit() 
 	{
-		$id = (int) $this->input->get('id');
-		$data['item'] = $this->input->post('item', TRUE);
-		$data['value'] = $this->input->post('value', TRUE);
-		if( $data['type'] === FALSE || $data['content'] === FALSE) {
-			redirect('d=admin&c=config');
-		}//type,content
-		$this->config_m->edit($id, $data);
+		$address = $this->input->post('address', TRUE);
+		$phone = $this->input->post('phone', TRUE);
+		$fax = $this->input->post('fax', TRUE);
+		$qq = $this->input->post('qq', TRUE);
+
+		$this->config_m->set_item('address', 'xxxxxx');
+		$this->config_m->set_item('phone', 'xxxxxx');
+		$this->config_m->set_item('fax', 'xxxxxx');
+		$this->config_m->set_item('qq', 'xxxxxx');
+				
+		$this->config_m->set_item( 'address',$address);
+		$this->config_m->set_item('phone',$phone );
+		$this->config_m->set_item('fax',$fax );
+		$this->config_m->set_item('qq',$qq );
+		
 		redirect('d=admin&c=config');
-	}	
+	}
 }
