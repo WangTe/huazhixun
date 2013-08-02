@@ -85,14 +85,15 @@ CREATE TABLE IF NOT EXISTS `np_admin_user` (
   `power` int(11) NOT NULL,
   `last_ip` varchar(48) NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `np_admin_user`
 --
 
 INSERT INTO `np_admin_user` (`uid`, `username`, `password`, `salt`, `name`, `power`, `last_ip`) VALUES
-(3, 'wangte', '7edec1ff2d4a904a4f19ce92cd648253', '422996', '王特', 0, '');
+(3, 'wangte', '7edec1ff2d4a904a4f19ce92cd648253', '422996', '王特', 0, ''),
+(4, 'adminhzx', '7edec1ff2d4a904a4f19ce92cd648253', '422996', '华智讯', 0, '');
 
 -- --------------------------------------------------------
 
