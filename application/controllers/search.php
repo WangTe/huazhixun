@@ -9,6 +9,7 @@ class Search extends CI_Controller
 		$this->load->model('search_m');
 		$this->load->model('index_img_m');
 		$this->load->helper('search_url');
+		$this->load->model('config_m');	
 	}
 	
 	public function index() 
@@ -67,6 +68,12 @@ class Search extends CI_Controller
 		$data['page_html'] =  $this->_page_init_search($per_page, $total_rows);
 		$data['ad_img'] = $this->index_img_m->get_list(Index_img_m::IMG_BANNER);
 		$data['ad_img_num'] = count($data['ad_img']);
+		
+		// 获取配置的信息
+		$data['address'] = $this->config_m->item('address');
+		$data['phone'] = $this->config_m->item('phone');
+		$data['fax'] = $this->config_m->item('fax');
+		$data['qq'] = $this->config_m->item('qq');
 		
 		$this->load->view('header.php', $data);
 		$this->load->view('search.php');
