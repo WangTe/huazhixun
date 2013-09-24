@@ -213,6 +213,7 @@ ul li {
 	margin-top:10px;
 }
 .index_content .index_content_teacher li {
+    height:188px;
 	padding-left:14px;
 	padding-right:15px;
 }
@@ -233,11 +234,13 @@ ul li {
 }
 .index_content .index_content_course li {
 	width:140px;	
+	height:170px;
 	padding-left:25px;
 	padding-right:25px;
 }
 .index_content .index_content_project li {
-	width:150px;	
+	width:150px;
+	height:153px;
 	padding-left:19px;
 	padding-right:5px;
 }

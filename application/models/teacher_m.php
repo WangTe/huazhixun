@@ -37,13 +37,17 @@ class Teacher_m extends CI_Model
 		return $return;
 	}
 	
-	public function get_index_list($limit)
+	public function get_index_list($limit = -1)
 	{
 		$return = array();
 	
 		$this->db->where('index >', 0);
 		$this->db->order_by('index DESC, id DESC');
-		$query = $this->db->get('teacher', $limit);
+		if ($limit > 0) {
+			$query = $this->db->get('teacher', $limit);
+		} else {
+			$query = $this->db->get('teacher');
+		}
 		$return = $query->result_array();
 		return $return;
 	}
