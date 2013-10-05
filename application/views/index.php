@@ -1,45 +1,90 @@
 <div class="box">
-		<div class="index_left_item">
-			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/teacher/type');?>"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
-				<a class="f_r" href="<?php echo base_url('/teacher/type');?>"><p class="more">更多 &gt;</p></a>
-				<div class="clear"></div>
+	<div class="box st_main">
+		<div id="st_float">
+			<div class="title_2">免费试听课程!</div>
+			<div>
+				<form action="<?php echo base_url('/apply/add')?>" method="post">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="88%">
+						<tr>
+							<td width="30">姓名</td>
+							<td><input name="name" type="text" size="8" /></td>
+						</tr>
+						<tr>
+							<td>性别</td>
+							<td>
+								<select name="sex">
+									<option value="未选择">未选择</option>
+									<option value="男">男</option>
+									<option value="女">女</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>单位</td>
+							<td><input name="name" type="text" /></td>
+						</tr>
+						<tr>
+							<td>职务</td>
+							<td><input name="name" type="text" /></td>
+						</tr>
+						<tr>
+							<td>住址</td>
+							<td><input name="name" type="text" /></td>
+						</tr>
+						<tr>
+							<td>手机</td>
+							<td><input name="name" type="text" /></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input name="name" type="submit" value="报名试听" /></td>
+						</tr>
+					</table>
+				</form>
 			</div>
-			<div class="index_content" style="width:960px">
-				<ul class="index_content_teacher">
-				    <?php foreach ($teachers as $t): ?>
-					<li>
-						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="96" height="124" /></a>
-						<div>
-							<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><p class="t_center"><?php  echo $t['name'];?></p></a>
-							<p class="teacher_remark"><?php  echo $t['position'];?></p>
-						</div>
-					</li>
-					<?php endforeach; ?>
+		</div>
+	</div>
+	<div class="index_left_item">
+		<div class="title_1">
+			<a class="f_l" href="<?php echo base_url('/teacher/type');?>"><p>金牌讲师<span>&nbspGold Teachers</span></p></a>
+			<a class="f_r" href="<?php echo base_url('/teacher/type');?>"><p class="more">更多 &gt;</p></a>
+			<div class="clear"></div>
+		</div>
+		<div class="index_content" style="width:960px">
+			<ul class="index_content_teacher">
+			    <?php foreach ($teachers as $t): ?>
+				<li>
+					<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><img src="<?php echo base_url($t['photo']); ?>" width="96" height="124" /></a>
+					<div>
+						<a href="<?php echo base_url('/teacher/?id=' . $t['id']); ?>"><p class="t_center"><?php  echo $t['name'];?></p></a>
+						<p class="teacher_remark"><?php  echo $t['position'];?></p>
+					</div>
+				</li>
+				<?php endforeach; ?>
 
-					<div class="clear"></div>
-				</ul>
-			</div>
-		</div>
-		<div class="index_left_item">
-			<div class="title_1">
-				<a class="f_l" href="<?php echo base_url('/course/type');?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
-				<a class="f_r" href="<?php echo base_url('/course/type');?>"><p class="more">更多 &gt;</p></a>
 				<div class="clear"></div>
-			</div>
-			<div class="index_content" style="width:960px">
-				<ul class="index_content_course">
-				    <?php foreach ($courses as $c):?>
-					<li>
-						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><img src="<?php echo base_url($c['photo']); ?>" width="147" height="101" /></a>
-						<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><p class="t_center"><?php  echo $c['name'];?></p></a>
-						<p class="course_remark"><span></span>&nbsp主讲人：<?php  echo $c['professor'];?></p>
-					</li>
-					<?php endforeach;?>
-					<div class="clear"></div>
-				</ul>
-			</div>
+			</ul>
 		</div>
+	</div>
+	<div class="index_left_item">
+		<div class="title_1">
+			<a class="f_l" href="<?php echo base_url('/course/type');?>"><p>主打课程<span>&nbspLeading Courses</span></p></a>
+			<a class="f_r" href="<?php echo base_url('/course/type');?>"><p class="more">更多 &gt;</p></a>
+			<div class="clear"></div>
+		</div>
+		<div class="index_content" style="width:960px">
+			<ul class="index_content_course">
+			    <?php foreach ($courses as $c):?>
+				<li>
+					<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><img src="<?php echo base_url($c['photo']); ?>" width="147" height="101" /></a>
+					<a title="<?php  echo $c['name'];?>" href="<?php echo base_url('/course/?id=' . $c['id']); ?>"><p class="t_center"><?php  echo $c['name'];?></p></a>
+					<p class="course_remark"><span></span>&nbsp主讲人：<?php  echo $c['professor'];?></p>
+				</li>
+				<?php endforeach;?>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
 	<div class="index_left">
 		<div class="index_left_item">
 			<div class="title_1">
@@ -84,11 +129,13 @@
 				<a href="<?php echo base_url('/article/type');?>"><p>讲师动态<span>&nbspTeachers' Dynamic</span></p></a>
 			</div>
 			<div class="index_content_announcement">
-				<ul>
-					<?php foreach ($news as $n): ?>
-					<li><a href="<?php echo base_url('/article/?aid=' . $n['aid']); ?>"><p><?php echo $n['title'];?></p></a>
-					<?php endforeach; ?>
-				</ul>
+				<marquee onmouseover=this.stop() onmouseout=this.start() direction="up" scrollAmount="2">
+					<ul>
+						<?php foreach ($news as $n): ?>
+						<li><a href="<?php echo base_url('/article/?aid=' . $n['aid']); ?>"><p><?php echo $n['title'];?></p></a>
+						<?php endforeach; ?>
+					</ul>
+				</marquee>
 			</div>
 		</div>
 		<div id="link">

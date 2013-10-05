@@ -211,6 +211,7 @@ ul li {
 .index_content li {
 	float:left;
 	margin-top:10px;
+	display: inline;
 }
 .index_content .index_content_teacher li {
     height:188px;
@@ -233,16 +234,14 @@ ul li {
 .index_content_course {
 }
 .index_content .index_content_course li {
-	width:140px;	
 	height:170px;
-	padding-left:25px;
-	padding-right:25px;
+	width:160px;
+	margin-left:26px;
 }
 .index_content .index_content_project li {
-	width:150px;
+	width:160px;
 	height:153px;
-	padding-left:19px;
-	padding-right:5px;
+	margin-left:16px;
 }
 .index_content_course li .t_center {
 	padding-top:4px;
@@ -321,6 +320,9 @@ ul li {
 .announcement {
 }
 .index_content_announcement {
+    margin-top:10px;
+    height: 210px;
+    overflow: hidden;
 }
 .index_content_announcement ul {
 	padding-top:5px;
@@ -432,9 +434,9 @@ ul li {
 }
 
 .title_2 {
-	background-image:url(../img/title3_bg.png);
-	background-repeat:repeat-x;	
 	height:36px;
+	line-height:36px;
+	text-align:center;
 	color:#16487d;
 	font-family:"微软雅黑";
 	font-weight:bold;
@@ -1274,4 +1276,31 @@ ul li {
     margin:20px auto 20px auto;
     display:block;
     padding-bottom:20px;
+}
+
+.st_main {
+    position:relative;
+}
+#st_float {
+    height:245px;
+    line-height:1.2em;
+    background: #FFF;
+    border: 1px solid #E0E0E0;
+    position:absolute;
+    top:0px;
+    left:-130px;
+    z-index:1999;
+    width:130px;
+    overflow:hidden;
+}
+#st_float input {
+    padding: 2px 0;
+    width: 80px;
+    border: 1px solid #BBB;
+}
+#st_float table {
+    margin: 0 auto;
+}
+#st_float td {
+    line-height: 26px;
 }

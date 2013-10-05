@@ -2,12 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="华智讯,华智讯培训,教育培训" />
-<meta name="description" content="华智讯,华智讯培训,教育培训" />
+<meta name="keywords" content="华智讯,华智讯培训,教育培训,华智讯讲师,华智讯讲师合作,华智讯讲师合作平台" />
+<meta name="description" content="华智讯,华智讯培训,教育培训,华智讯讲师,华智讯讲师合作,华智讯讲师合作平台" />
 <meta name="author" content="风格独特" />
 <title>华智讯教育培训中心</title>
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/common/css/index.css'); ?>" />
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/common/css/dynamic.css'); ?>" />
+<!--[if IE 6]>
+<link rel=stylesheet type="text/css" href="<?php echo base_url('static/common/css/ie6.css'); ?>" />
+<![endif]-->
 <script type="text/javascript" src="<?php echo base_url('static/common/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/common/js/main.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/common/js/navi.js'); ?>"></script>
