@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+/*body {
+    _background-attachment:fixed;
+    _background-image:url(about:blank);
+}
+
+#st_float {
+    _position:absolute;
+    _top:expression(offsetParent.scrollTop + 100);
+    _left:expression(offsetParent.scrollLeft + 100);
+}*/

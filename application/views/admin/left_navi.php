@@ -16,6 +16,7 @@
 				<li><a href="<?php echo base_url('/admin/course'); ?>">课程管理</a></li>
 				<li><a href="<?php echo base_url('/admin/project'); ?>">项目管理</a></li>
 				<li><a href="<?php echo base_url('/admin/activity'); ?>">公益管理</a></li>
+				<li><a href="<?php echo base_url('/admin/apply'); ?>">试听报名</a></li>
 				<li class="title_1">用户管理</li>
 				<li><a href="<?php echo base_url('/admin/admin_manager'); ?>">后台用户</a></li>
 			</ul>

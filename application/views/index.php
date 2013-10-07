@@ -21,23 +21,23 @@
 						</tr>
 						<tr>
 							<td>单位</td>
-							<td><input name="name" type="text" /></td>
+							<td><input name="company" type="text" /></td>
 						</tr>
 						<tr>
 							<td>职务</td>
-							<td><input name="name" type="text" /></td>
+							<td><input name="position" type="text" /></td>
 						</tr>
 						<tr>
 							<td>住址</td>
-							<td><input name="name" type="text" /></td>
+							<td><input name="address" type="text" /></td>
 						</tr>
 						<tr>
 							<td>手机</td>
-							<td><input name="name" type="text" /></td>
+							<td><input name="phone" type="text" /></td>
 						</tr>
 						<tr>
 							<td></td>
-							<td><input name="name" type="submit" value="报名试听" /></td>
+							<td><input name="submit" type="submit" value="报名试听" /></td>
 						</tr>
 					</table>
 				</form>
